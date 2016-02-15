@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<!-- this is the markup document that should contains a form
+     that represents the choices available on the
+     Dado Tea Lunch Special paper form -->
+
+<!-- remember to use action="http://cscis12.dce.harvard.edu/echo" for the form element -->
+<html>
+<head>
+    <title>Dado's Restaurant</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+<h1>Dado Tea Lunch Special</h1>
+<article>Hours of Operation:</article>
+<section>Monday - Friday
+11am - 3pm</section>
+<br/>
+<form method="get" action="http://cscis12.dce.harvard.edu/echo">
+    <div>
+        <fieldset>
+            <legend>Order Information</legend>
+            <label for="one_box_name">Name</label>
+            <input type="text" name="one_box_name" id="one_box_name"
+                   size="30"/><br><br>
+            <input type="radio" name="order_status"
+                   id="order_status_here" value="here">
+            <label for="order_status_here">Here</label><br>
+            <input type="radio" name="order_status"
+                   id="order_status_takeout" value="here">
+            <label for="order_status_takeout">To Go</label><br>
+        </fieldset>
+        <fieldset>
+            <legend>Sandwiches</legend>
+            <div>Monday<br>
+            <input type="radio" name="weekday_m_sw"
+                   id="weekday_m_sw_one" value="salad_pt">
+            <label for="weekday_m_sw_one">Pesto Tofu Salad</label><br>
+            <input type="radio" name="weekday_m_sw"
+                   id="weekday_m_sw_two" value="salad_ch">
+            <label for="weekday_m_sw_two">Chicken Salad</label><br>
+            </div>
+            <div>Tuesday<br>
+                <input type="radio" name="weekday_t_sw"
+                       id="weekday_t_sw_one" value="wrap_gs">
+                <label for="weekday_t_sw_one">Greek Salad Wrap</label><br>
+                <input type="radio" name="weekday_t_sw"
+                       id="weekday_t_sw_two" value="salad_tu">
+                <label for="weekday_t_sw_two">Tuna Salad</label><br>
+            </div>
+            <div>Wednesday<br>
+                <input type="radio" name="weekday_w_sw"
+                       id="weekday_w_sw_one" value="sand_hum">
+                <label for="weekday_w_sw_one">Hummus</label><br>
+                <input type="radio" name="weekday_w_sw"
+                       id="weekday_w_sw_two" value="sand_tur">
+                <label for="weekday_w_sw_two">Turkey</label><br>
+            </div>
+            <div>Thursday<br>
+                <input type="radio" name="weekday_th_sw"
+                       id="weekday_th_sw_one" value="wrap_cg">
+                <label for="weekday_th_sw_one">Carrot-Ginger Wrap</label><br>
+                <input type="radio" name="weekday_th_sw"
+                       id="weekday_th_sw_two" value="salad_egg">
+                <label for="weekday_th_sw_two">Egg Salad</label><br>
+            </div>
+            <div>Friday<br>
+                <input type="radio" name="weekday_f_sw"
+                       id="weekday_f_sw_one" value="sand_veg">
+                <label for="weekday_f_sw_one">Veggie</label><br>
+                <input type="radio" name="weekday_f_sw"
+                       id="weekday_f_sw_two" value="salad_tu">
+                <label for="weekday_f_sw_two">Tuna Salad</label><br>
+            </div>
+        </fieldset>
+    </div>
+</form>
+
+</body>
+</html>
