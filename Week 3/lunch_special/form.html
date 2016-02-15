@@ -12,9 +12,10 @@
 </head>
 <body>
 <h1>Dado Tea Lunch Special</h1>
-<article>Hours of Operation:</article>
-<section>Monday - Friday
-11am - 3pm</section>
+<div>Hours of Operation:
+Monday - Friday
+11am - 3pm
+</div>
 <br/>
 <form method="post" action="http://cscis12.dce.harvard.edu/echo">
     <div>
@@ -80,7 +81,7 @@
                        id="breads_one" value="bread_7">
                 <label for="breads_one">7 Grain</label><br>
                 <input type="radio" name="breads"
-                       id="breads_two" value="bread_fr">
+                       id="breads_two" value="bread_fr" checked>
                 <label for="breads_two">French</label><br>
                 <input type="radio" name="breads"
                        id="breads_three" value="bread_ww">
@@ -88,7 +89,7 @@
             </div>
             <div>Cheeses (add 50&#162;<!--&#65504;-->)<br>
                 <input type="radio" name="cheeses"
-                       id="cheeses_default" value="cheese_no">
+                       id="cheeses_default" value="cheese_no" checked>
                 <label for="cheeses_default">No Cheese</label><br>
                 <input type="radio" name="cheeses"
                        id="cheeses_one" value="cheese_feta">
@@ -168,7 +169,10 @@
                         <option>Keemun</option>
                         <option>Decaf Keemun</option>
                     </optgroup>
-                </select>
+                </select><br>
+                <input type="checkbox" name="drinks"
+                       id="drink_one" value="drink_large">
+                <label for="drink_one">Large (add 50&#162;)</label><br>
 
             </div>
         </fieldset>
