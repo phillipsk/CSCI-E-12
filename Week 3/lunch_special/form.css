@@ -1,1 +1,44 @@
 /* CSS Rules for the Dado Tea Lunch Special Form */
+
+body{
+    margin-left: 10%;
+    margin-top: 1em;
+    margin-right: 10%;
+    background: #ffbf20;
+    font-family: "Abyssinica SIL",Utopia,sans-serif;
+}
+
+h1{
+    font-family: cursive,"DejaVu Sans",sans-serif;
+    color: darkred;
+    border-bottom: groove;
+    font-stretch: condensed;
+}
+
+h4{
+    line-height: 120%;
+    color: firebrick;
+    border: double;
+    text-align: center;
+    font-family: "Abyssinica SIL", Utopia, sans-serif;
+}
+
+#hours{
+    color: tomato;
+    opacity: 10;
+    text-align: justify;
+    font-family: "DejaVu Sans Condensed","Source Han Sans CN ExtraLight",sans-serif;
+    padding: 1em;
+    border: double;
+    height: 20%;
+}
+
+#sandwiches{
+    color: chartreuse;
+    background-color: goldenrod;
+    font-size: xx-large;
+    padding: 0.4%;
+    font-family: "DejaVu Sans Condensed", "Source Han Sans CN ExtraLight", sans-serif;
+    border: ridge;
+    height: 70%;
+}
