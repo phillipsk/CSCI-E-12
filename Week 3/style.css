@@ -1,0 +1,36 @@
+body {
+    /* put in font-family property for body */
+    background: #ffffff;
+    font-family: "monospace";
+}
+
+
+/* make h1 and h2 different colors by using the color property */
+
+h1 {
+    /* give the h1 a bottom border */
+    border-bottom: groove;
+    color: darksalmon;
+}
+
+h2 {
+    color: lightgray;
+}
+
+p {
+    /* make the line-height to be 150%
+       and the padding-left 2em; */
+    line-height: 150%;
+    padding-left: 2em;
+}
+
+.badge {
+    width: 100px;
+    float: right;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.clearfix {
+    overflow: auto;
+}
