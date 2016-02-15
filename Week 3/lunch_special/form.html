@@ -16,7 +16,7 @@
 <section>Monday - Friday
 11am - 3pm</section>
 <br/>
-<form method="get" action="http://cscis12.dce.harvard.edu/echo">
+<form method="post" action="http://cscis12.dce.harvard.edu/echo">
     <div>
         <fieldset>
             <legend>Order Information</legend>
@@ -127,6 +127,49 @@
                 <input type="checkbox" name="fillings"
                        id="fillings_four" value="filling_RedOn">
                 <label for="fillings_four">Red Onion</label><br>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Snacks and Drink</legend>
+            <div>Snacks<br>
+                <input type="radio" name="snacks"
+                       id="snacks_one" value="snacks_appl">
+                <label for="snacks_one">Apple</label><br>
+                <input type="radio" name="snacks"
+                       id="snacks_two" value="snacks_bana">
+                <label for="snacks_two">Banana</label><br>
+                <input type="radio" name="snacks"
+                       id="snacks_three" value="snacks_chips">
+                <label for="snacks_three">Potato Chips</label><br>
+            </div>
+            <div>Drinks<br>
+                <select name="drinks">
+                    <optgroup label="Hot Coffee">
+                        <option>Coffee</option>
+                        <option>Decaf Coffee</option>
+                    </optgroup>
+                    <optgroup label="Hot Green Tea">
+                        <option>Sencha</option>
+                        <option>Decaf Green</option>
+                    </optgroup>
+                    <optgroup label="Hot Black Tea">
+                        <option>Keemun</option>
+                        <option>Decaf Keemun</option>
+                    </optgroup>
+                    <optgroup label="Iced Coffee">
+                        <option>Coffee</option>
+                        <option>Decaf Coffee</option>
+                    </optgroup>
+                    <optgroup label="Iced Green Tea">
+                        <option>Sencha</option>
+                        <option>Decaf Green</option>
+                    </optgroup>
+                    <optgroup label="Iced Black Tea">
+                        <option>Keemun</option>
+                        <option>Decaf Keemun</option>
+                    </optgroup>
+                </select>
+
             </div>
         </fieldset>
     </div>
