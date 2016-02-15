@@ -12,8 +12,8 @@
 </head>
 <body>
 <h1>Dado Tea Lunch Special</h1>
-<div>Hours of Operation:
-Monday - Friday
+<div id="hours"><h4>Hours of Operation:</h4>
+Monday - Friday<br>
 11am - 3pm
 </div>
 <br/>
@@ -32,7 +32,7 @@ Monday - Friday
             <label for="order_status_takeout">To Go</label><br>
         </fieldset>
         <fieldset>
-            <legend>Sandwiches</legend>
+            <legend id="sandwiches">Sandwiches</legend>
             <div>Monday<br>
             <input type="radio" name="weekday_m_sw"
                    id="weekday_m_sw_one" value="salad_pt">
@@ -93,7 +93,7 @@ Monday - Friday
                 <label for="cheeses_default">No Cheese</label><br>
                 <input type="radio" name="cheeses"
                        id="cheeses_one" value="cheese_feta">
-                <label for="cheeses_one">No Cheese</label><br>
+                <label for="cheeses_one">Feta</label><br>
                 <input type="radio" name="cheeses"
                        id="cheeses_two" value="cheese_moz">
                 <label for="cheeses_two">Fresh Mozzarella</label><br>
@@ -145,29 +145,23 @@ Monday - Friday
             </div>
             <div>Drinks<br>
                 <select name="drinks">
-                    <optgroup label="Hot Coffee">
-                        <option>Coffee</option>
-                        <option>Decaf Coffee</option>
+                    <optgroup label="Coffee">
+                        <option>Hot Coffee</option>
+                        <option>Hot Decaf Coffee</option>
+                        <option>Iced Coffee</option>
+                        <option>Iced Decaf Coffee</option>
                     </optgroup>
-                    <optgroup label="Hot Green Tea">
-                        <option>Sencha</option>
-                        <option>Decaf Green</option>
+                    <optgroup label="Green Tea">
+                        <option>Hot Green Tea - Sencha</option>
+                        <option>Hot Green Tea - Decaf</option>
+                        <option>Iced Green Tea - Sencha</option>
+                        <option>Iced Green Tea - Decaf</option>
                     </optgroup>
-                    <optgroup label="Hot Black Tea">
-                        <option>Keemun</option>
-                        <option>Decaf Keemun</option>
-                    </optgroup>
-                    <optgroup label="Iced Coffee">
-                        <option>Coffee</option>
-                        <option>Decaf Coffee</option>
-                    </optgroup>
-                    <optgroup label="Iced Green Tea">
-                        <option>Sencha</option>
-                        <option>Decaf Green</option>
-                    </optgroup>
-                    <optgroup label="Iced Black Tea">
-                        <option>Keemun</option>
-                        <option>Decaf Keemun</option>
+                    <optgroup label="Black Tea">
+                        <option>Hot Black Tea - Keemun</option>
+                        <option>Hot Black Tea - Decaf Keemun</option>
+                        <option>Hot Black Tea - Keemun</option>
+                        <option>Hot Black Tea - Decaf Keemun</option>
                     </optgroup>
                 </select><br>
                 <input type="checkbox" name="drinks"
@@ -177,6 +171,7 @@ Monday - Friday
             </div>
         </fieldset>
     </div>
+    <input type="submit" name="action" value="Submit Order"/>
 </form>
 
 </body>
