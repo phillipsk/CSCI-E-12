@@ -1,0 +1,57 @@
+body {
+    font-family: calibri, verdana, tahoma, arial, helvetica, sans-serif;
+    margin: 0px 5%;
+    background-color: #ccc;
+    color: #000;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: white;
+    background-color: green;
+}
+
+ul {
+    background-color: yellow;
+}
+
+p {
+    color: white;
+    background-color: crimson;
+    padding: 0.5em;
+}
+
+header {
+    width: 100%;
+}
+
+footer {
+    width: 100%;
+    clear: both;
+}
+
+nav {
+    width: 15%;
+    float: left;
+    padding-right: 10px;
+}
+
+aside {
+    width: 33%;
+    float: right;
+}
+
+#main {
+    width: 50%;
+    float: left;
+}
+/*  add new CSS rules below! */
+
+aside ul, aside p, aside h2, aside{
+    color: black;
+    background-color: white;
+}
