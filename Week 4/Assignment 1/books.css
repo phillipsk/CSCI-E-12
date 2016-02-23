@@ -1,0 +1,67 @@
+/*
+CSS file for books.html
+*/
+
+h1 {
+    /*width: 100%;*/
+    text-align: center;
+    border-color: #5336ff;
+    border-width: medium;
+    border-style: ridge;
+    color: brown;
+    background-color: cadetblue;
+    height: 70%;
+    padding: 30px;
+    margin: 1.5em;
+    font-family: "DejaVu Sans Condensed", "Source Han Sans CN ExtraLight", sans-serif;
+}
+
+.date, .isbn {
+    font-size: 80%;
+    padding: 3px;
+}
+
+.publisher {
+    text-transform: lowercase;
+}
+
+.author {
+    font-style: italic;
+    color: darkred;
+}
+
+a:link {
+    color: darkmagenta;
+    text-decoration: dotted;
+}
+
+a:visited {
+    color: darkorchid;
+}
+
+a:hover {
+    color: cornflowerblue;
+    background-color: indianred;
+}
+
+a:active {
+    color: orangered;
+}
+
+.bookcover img{
+    float: right;
+}
+.book {
+    clear: right;
+    overflow: auto;
+    border-style: ridge;
+    border-color: deepskyblue;
+    padding: 14px;
+    margin: 3em;
+}
+body{
+    background-color: khaki;
+}
+ul{
+    list-style: none;
+}
