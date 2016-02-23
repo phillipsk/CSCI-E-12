@@ -1,26 +1,33 @@
 /* news.css */
 
-title{
-    padding: 3px;
-}
 header{
     margin: auto;
-    width: 80%;
+    width: 100%;
     border: 3px solid white;
-    padding: 10px;
+    /*padding: 10px;*/
     color: white;
     background-color: #00207A;
     /*float: left;*/
+    /*overflow: auto;*/
+    text-align: center;
 }
 header h1{
     /*float: left;*/
     /*display: block;*/
-
+    /*text-align: center;*/
+    font-size: xx-large;
+}
+header h1 IMG{
+    float: left;
+    overflow: auto;
+    /*padding-left: 5em;*/
 }
 header h4{
     font-style: italic;
+    text-align: left;
+    padding-top: 1.5em;
+    padding-left: 1em;
 }
-
 body{
     background-color: #3D4D7A;
     width: 80%;
@@ -30,4 +37,10 @@ body{
 body a:link{
     color: darkmagenta;
     text-decoration: dotted;
+}
+section{
+    background-color: white;
+    border: double;
+    padding: 16px;
+    text-align: justify;
 }
