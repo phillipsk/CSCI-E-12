@@ -1,6 +1,33 @@
 /* news.css */
 
+title{
+    padding: 3px;
+}
+header{
+    margin: auto;
+    width: 80%;
+    border: 3px solid white;
+    padding: 10px;
+    color: white;
+    background-color: #00207A;
+    /*float: left;*/
+}
+header h1{
+    /*float: left;*/
+    /*display: block;*/
+
+}
+header h4{
+    font-style: italic;
+}
+
 body{
     background-color: #3D4D7A;
+    width: 80%;
+    margin: auto;
 }
 /*add hover links css*/
+body a:link{
+    color: darkmagenta;
+    text-decoration: dotted;
+}
