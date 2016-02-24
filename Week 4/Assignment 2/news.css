@@ -62,10 +62,12 @@ p.timestamp{
     border: groove;
     height: 70%;
     padding: inherit;
+    margin: 3px;
 }
 #Russia-Syria-war-crimes, #cancer-treatment, #EU-PM{
     background-color: lavenderblush;
     border: outset;
     height: 70%;
     padding: inherit;
+    margin: 3px;
 }
