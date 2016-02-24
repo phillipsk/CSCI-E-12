@@ -4,23 +4,21 @@ header{
     margin: auto;
     width: 100%;
     border: 3px solid white;
-    /*padding: 10px;*/
     color: white;
     background-color: #00207A;
-    /*float: left;*/
-    /*overflow: auto;*/
     text-align: center;
 }
 header h1{
     /*float: left;*/
     /*display: block;*/
-    /*text-align: center;*/
+    text-align: center;
     font-size: xx-large;
+    padding-right: 9em;
 }
 header h1 IMG{
     float: left;
     overflow: auto;
-    /*padding-left: 5em;*/
+    padding-left: 7em;
 }
 header h4{
     font-style: italic;
@@ -38,9 +36,36 @@ body a:link{
     color: darkmagenta;
     text-decoration: dotted;
 }
+body a:hover{
+    color: saddlebrown;
+    background-color: lightgreen;
+}
 section{
     background-color: white;
     border: double;
     padding: 16px;
     text-align: justify;
+}
+p{
+    font-family: "Lucida Bright","DejaVu Sans Light",sans-serif;
+    color: black;
+    text-align: justify;
+}
+p.timestamp{
+    color: darkblue;
+    font-family: "Abyssinica SIL", Utopia, sans-serif;
+    font-size: small;
+    background-color: transparent;
+}
+#German-train-crash, #Oil-freeze{
+    background-color: darkgrey;
+    border: groove;
+    height: 70%;
+    padding: inherit;
+}
+#Russia-Syria-war-crimes, #cancer-treatment, #EU-PM{
+    background-color: lavenderblush;
+    border: outset;
+    height: 70%;
+    padding: inherit;
 }
