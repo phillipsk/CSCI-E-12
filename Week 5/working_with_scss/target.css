@@ -1,0 +1,58 @@
+/* This is the target CSS file.  It needn't be exactly the same as what you produce in screen.css (via screen.scss),
+but it contains all the style rules you should implement
+*/
+
+nav {
+    width: 100%;
+}
+
+#sitenav {
+    color: #135b00;
+    font-weight: bold;
+    font-size: 125%;
+    background-color: #6fc559;
+}
+
+#sitenav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#sitenav ul li {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    width: 12%;
+    background-color: #6fc559;
+}
+
+#sitenav ul li a {
+    color: #135b00;
+    background-color: #6fc559;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#sitenav ul li a:hover {
+    background-color: #50dd31;
+    color: #135b00;
+    text-decoration: underline;
+}
+
+#sitenav ul li a:active {
+    color: #135b00;
+    background-color: #6fc559;
+}
+
+#sitenav ul #current a:link,
+#sitenav ul #current a:visited,
+#sitenav ul #current a:hover,
+#sitenav ul #current a:active {
+    background-color: #135b00;
+    color: #6fc559;
+    text-decoration: none;
+}

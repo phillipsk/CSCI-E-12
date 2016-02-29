@@ -1,0 +1,58 @@
+// This is here to get you started
+
+$background:#6FC559;
+//Is the above variable repeated?
+$nav-color:#135b00;
+$nav-bg-color:#6fc559;
+$hover-background-color:#50C531;
+$hover-color:#135b00;
+//$current-background;
+//$current-color:#6FC559;
+
+nav {
+    width: 100%;
+}
+
+#sitenav {
+    font-weight: bold;
+    font-size: 125%;
+    //first instance of background color
+    background-color: $nav-bg-color;
+    color: $nav-color;
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        li {
+            display: inline-block;
+            //float: left;
+            margin: 0;
+            padding: 0;
+            width: 12%;
+            //do I need to repeat this through the nested items?
+            //background-color: $nav-bg-color;
+            a {
+                // is this color property needed?
+                // Yes
+                color: $nav-color;
+                display: block;
+                text-align: center;
+                //background-color: $nav-bg-color;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                &:hover{
+                    background-color: $hover-background-color;
+                    color: $hover-color;
+                    text-decoration: underline;
+                }
+                &:active{
+                    color: $hover-color;
+                    //background-color: $nav-bg-color;
+                }
+
+            }
+        }
+        // nest select for #current here
+        
+    }
+}
