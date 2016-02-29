@@ -19,13 +19,17 @@ nav {
         color: #135b00;
         display: block;
         text-align: center;
+        text-decoration: none;
         padding-top: 10px;
         padding-bottom: 10px; }
         #sitenav ul li a:hover {
-          background-color: #50C531;
+          background-color: #50dd31;
           color: #135b00;
           text-decoration: underline; }
         #sitenav ul li a:active {
           color: #135b00; }
+    #sitenav ul #current a:link, #sitenav ul #current a:visited, #sitenav ul #current a:hover, #sitenav ul #current a:active {
+      background-color: #135b00;
+      color: #6fc559; }
 
 /*# sourceMappingURL=screen.css.map */

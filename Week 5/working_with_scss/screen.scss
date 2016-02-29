@@ -1,13 +1,21 @@
 // This is here to get you started
 
-$background:#6FC559;
+//$background:#6FC559;
 //Is the above variable repeated?
 $nav-color:#135b00;
 $nav-bg-color:#6fc559;
 $hover-background-color:#50C531;
-$hover-color:#135b00;
+//$hover-color:#135b00;
 //$current-background;
 //$current-color:#6FC559;
+
+@mixin id-current-link-styles-function($link-bg-color,$link-color){
+    a:link, a:visited, a:hover, a:active {
+        background-color: $link-bg-color;
+        color: $link-color;
+        //text-decoration: $text-decor;
+    }
+}
 
 nav {
     width: 100%;
@@ -29,6 +37,7 @@ nav {
             margin: 0;
             padding: 0;
             width: 12%;
+            //background-color: $nav-bg-color;
             //do I need to repeat this through the nested items?
             //background-color: $nav-bg-color;
             a {
@@ -37,22 +46,25 @@ nav {
                 color: $nav-color;
                 display: block;
                 text-align: center;
+                text-decoration: none;
                 //background-color: $nav-bg-color;
                 padding-top: 10px;
                 padding-bottom: 10px;
                 &:hover{
-                    background-color: $hover-background-color;
-                    color: $hover-color;
+                    background-color: #50dd31;
+                    color: $nav-color;
                     text-decoration: underline;
                 }
                 &:active{
-                    color: $hover-color;
+                    color: $nav-color;
                     //background-color: $nav-bg-color;
                 }
 
             }
         }
         // nest select for #current here
-        
+        #current{
+            @include id-current-link-styles-function($nav-color,$nav-bg-color)
+        }
     }
 }
