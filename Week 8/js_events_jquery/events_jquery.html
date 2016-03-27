@@ -17,6 +17,30 @@ $(document).ready(function() {
 		doOnClick(e);
 	});
 	/* add your jQuery selectors and event handlers here */
+    $('body').ready(function (e) {
+        doOnLoad();
+    });
+    $('#mylink').click(function (e) {
+        doOnClick(e);
+    });
+    $('#mypara').mouseover(function (e) {
+        doOnMouseOver(e);
+    });
+    $('#mypara').mouseout(function (e) {
+        doOnMouseOut(e);
+    });
+    $('#myform').submit(function (e) {
+        doOnSubmit(e.preventDefault());
+    });
+    $('#myname').focus(function (e) {
+        doOnFocus(e);
+    });
+    $('#myname').blur(function (e) {
+        doOnBlur(e);
+    });
+    $('#mydirection').change(function (e) {
+        doOnChange(e);
+    });
 });
 </script>
 </head>
