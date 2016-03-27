@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>Assignment - JavaScript Events</title>
+<style type="text/css">
+body { font-family: calibri, verdana, tahoma, helvetica, sans-serif;}
+.p1 {padding: 0.5em; width: 20%; border: thin solid green; background-color: #CCFFCC}
+#status {background-color: #ccc; margin: 1em; padding: 0.5em; width: 300px; float: right; border:medium solid black; }
+#statuscaption { font-size: larger;}
+#status img {border: thin solid black; }</style>
+<script type="text/javascript" src="js/events.js"></script>
+</head>
+<body onload="doOnLoad()">
+<h1>Illustrating JavaScript Events</h1>
+<p id="status"><img src="images/blank.png" alt="event image" id="event_image"/><br/>
+<span id="statuscaption">Event images and messages will display here.</span></p>
+<p><a id="mylink" href="#" onclick="doOnClick(this)" >Lorem ipsum dolor</a></p>
+<p id="mypara" class="p1" onmouseout="doOnMouseOut(this)" onmouseover="doOnMouseOver(this)" >Mouseover and out of this paragraph.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel risus at augue semper hendrerit.</p>
+<form id="myform" action="http://cscie12.dce.harvard.edu/cgi-bin/echo.cgi" onsubmit="return doOnSubmit(this)">
+  <fieldset>
+  <legend>Form</legend>
+  <p>
+    <label for="myname">Name</label>
+    :<br/>
+    <input id="myname" type="text" name="name" onfocus="doOnFocus(this)" onblur="doOnBlur(this)"  />
+  </p>
+  <p>
+    <input type="checkbox" id="optin" name="optin" value="Y" onclick="doOnClick(this)"/>
+    <label for="optin">Opt-in to receive promotional offers</label>
+  </p>
+  <p>Please select a direction:<br/>
+    <select id="mydirection"  name="direction" onchange="doOnChange(this)">
+      <option value="N">North</option>
+      <option value="S">South</option>
+      <option value="E">East</option>
+      <option value="W">West</option>
+    </select>
+  </p>
+  <p>
+    <input type="submit" name="Submit" value="Submit"/>
+  </p>
+  </fieldset>
+</form>
+</body>
+</html>
