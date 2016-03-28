@@ -5,6 +5,41 @@
 <link rel="stylesheet" href="css/theme.green.css">
     <title>Population Change from 2000 to 2010</title>
 
+    <script type="text/javascript" src="js/jquery-1.12.2.min.js"> </script>
+    <script type="text/javascript" src="js/jquery.tablesorter.min.js"> </script>
+
+    <!--<script src="https://code.jquery.com/jquery-1.12.1.min.js"
+            integrity="sha256-I1nTg78tSrZev3kjvfdM5A5Ak/blglGzlaZANLPDl3I=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.25.5/js/jquery.tablesorter.min.js"></script>
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.25.5/css/theme.blue.min.css"/>-->
+
+    <script type="text/javascript">
+        /*    // Taken from in-class senate-tablesorter example on slide 36
+         $(document).ready(function () {
+         $("#senatetable").tablesorter({theme: 'blue', widgets: ['zebra']});
+         }
+         );*/
+        $(document).ready(function () {
+            $('#my_table').tablesorter({
+                sortList:[[0,0]],
+                theme: 'green',
+                widgets: ['zebra']
+            });
+        })
+    </script>
+
+    <!--Using jQuery CDN from Google-->
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.tablesorter.js"></script>
+    <script type="text/javascript" src="js/tablesorter.js"> </script>-->
+    <!-- per this article:
+    http://encosia.com/3-reasons-why-you-should-let-google-host-jquery-for-you/
+    I'm creating a fallback to local option-->
+    <!--<script>if (typeof jQuery === 'undefined') {
+        document.write(unescape('%3Cscript%20src%3D%22/js/jquery-1.12.2.min.js%22%3E%3C/script%3E'));
+    }
+    </script>-->
 
 </head>
 <body>
@@ -389,40 +424,5 @@
     </tr>
     </tbody>
 </table>
-<script type="text/javascript" src="js/jquery-1.12.2.min.js"> </script>
-<script type="text/javascript" src="js/jquery.tablesorter.min.js"> </script>
-
-<!--<script src="https://code.jquery.com/jquery-1.12.1.min.js"
-        integrity="sha256-I1nTg78tSrZev3kjvfdM5A5Ak/blglGzlaZANLPDl3I=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.25.5/js/jquery.tablesorter.min.js"></script>
-<link rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.25.5/css/theme.blue.min.css"/>-->
-
-<script type="text/javascript">
-    /*    // Taken from in-class senate-tablesorter example on slide 36
-     $(document).ready(function () {
-     $("#senatetable").tablesorter({theme: 'blue', widgets: ['zebra']});
-     }
-     );*/
-    $(document).ready(function () {
-        $('#my_table').tablesorter({
-            sortList:[[0,0]],
-            theme: 'green',
-            widgets: ['zebra']
-        });
-    })
-</script>
-
-<!--Using jQuery CDN from Google-->
-<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.tablesorter.js"></script>
-<script type="text/javascript" src="js/tablesorter.js"> </script>-->
-<!-- per this article:
-http://encosia.com/3-reasons-why-you-should-let-google-host-jquery-for-you/
-I'm creating a fallback to local option-->
-<!--<script>if (typeof jQuery === 'undefined') {
-    document.write(unescape('%3Cscript%20src%3D%22/js/jquery-1.12.2.min.js%22%3E%3C/script%3E'));
-}
-</script>-->
 </body>
 </html>
