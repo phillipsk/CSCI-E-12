@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $("a[rel=fancybox_group]").fancybox({
+    $("a[rel=my_gallery_group]").fancybox({
         'transitionIn'		: 'none',
         'transitionOut'		: 'none',
         'titlePosition' 	: 'over',
