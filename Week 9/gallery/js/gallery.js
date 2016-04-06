@@ -1,11 +1,21 @@
 $(document).ready(function(){
-    $("a[rel=my_gallery_group]").fancybox({
-        'transitionIn'		: 'none',
-        'transitionOut'		: 'none',
-        'titlePosition' 	: 'over',
-        'titleFormat'		: function(title, currentArray, currentIndex, currentOpts) {
-            return '<span id="fancybox-title-over">Image ' + (currentIndex + 1) + ' / ' + currentArray.length + (title.length ? ' &nbsp; ' + title : '') + '</span>';
+    $("a[data-fancybox-group=fancybox_group]").fancybox({
+        'transitionIn': 'none',
+        'transitionOut': 'none',
+        'titlePosition': 'over',
+        /* allows user to click CENTER of an image to cycle through images, without this clicking in the
+         * middle has no effect */
+        'nextClick': 'true',
+        helpers: {
+            title: {
+                type: 'inside'
+            }
+        },
+        beforeShow: function () {
+            /* Disable right click */
+            $.fancybox.wrap.bind("contextmenu", function (e) {
+                return false;
+            });
         }
     });
-
 });

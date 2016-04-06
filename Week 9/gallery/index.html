@@ -2,10 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <!--<link rel="stylesheet" type="text/css" href="Assignment1.css">-->
     <title>CSCI E-12 Week 9 - jQuery UI</title>
     <!-- Add jQuery library -->
-    <!--<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>-->
     <script type="text/javascript" src="js/jquery-1.12.2.min.js"> </script>
 
     <!-- Add mousewheel plugin (this is optional) -->
@@ -19,32 +17,32 @@
     <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
     <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
     <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+    <!--proprietary javascript below-->
     <script type="text/javascript" src="js/gallery.js"></script>
 
+    <!---->
     <link rel="stylesheet" href="css/gallery.css" type="text/css">
-    <link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+    <!--<link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />-->
 </head>
 <body>
-<h1>CSCI E-12 Week 9 - jQuery UI</h1>
+<h1>CSCI E-12 Week 9 Assignment 1 - jQuery UI</h1>
 <p>
     <a href="http://fancyapps.com/fancybox/">fancyBox</a> is a tool for displaying images, html content and multi-media in a Mac-style "lightbox" that floats overtop of web page.
     <br />
     It was built using the <a href="http://jquery.com/">jQuery library</a>.
 </p>
 <div class="gallery">
-    <a href="gnp01.jpg" rel="my_gallery_group" ><img src="thumb/gnp01.jpg" alt="image" /></a>
-    <a href="gnp02.jpg" rel="my_gallery_group" ><img src="thumb/gnp02.jpg" alt="image" /></a>
-    <a href="gnp03.jpg" rel="my_gallery_group" ><img src="thumb/gnp03.jpg" alt="image" /></a>
-    <a href="gnp04.jpg" rel="my_gallery_group" ><img src="thumb/gnp04.jpg" alt="image" /></a>
-    <a href="gnp05.jpg" rel="my_gallery_group" ><img src="thumb/gnp05.jpg" alt="image" /></a>
-    <a href="gnp06.jpg" rel="my_gallery_group" ><img src="thumb/gnp06.jpg" alt="image" /></a>
-    <a href="gnp07.jpg" rel="my_gallery_group" ><img src="thumb/gnp07.jpg" alt="image" /></a>
-    <a href="gnp08.jpg" rel="my_gallery_group" ><img src="thumb/gnp08.jpg" alt="image" /></a>
-    <a href="gnp09.jpg" rel="my_gallery_group" ><img src="thumb/gnp09.jpg" alt="image" /></a>
+    <!-- referenced this link http://stackoverflow.com/questions/9037061/html-attribute-rel-errors-using-fancybox
+    towards the data-fancybox-group attribute as opposed to the non-validating rel attribute -->
+    <a title="01:Many Glacier" href="gnp01.jpg" data-fancybox-group="fancybox_group" ><img src="thumb/gnp01.jpg" alt="image" /></a>
+    <a title="02:Many Glacier- Aspen Grove" href="gnp02.jpg" data-fancybox-group="fancybox_group" ><img src="thumb/gnp02.jpg" alt="image" /></a>
+    <a title="03:Logan Pass- Aster Bloom" href="gnp03.jpg" data-fancybox-group="fancybox_group" ><img src="thumb/gnp03.jpg" alt="image" /></a>
+    <a title="04:Hidden Lake- August Evening With The Goats" href="gnp04.jpg" data-fancybox-group="fancybox_group" ><img src="thumb/gnp04.jpg" alt="image" /></a>
+    <a title="05:Lake McDonald" href="gnp05.jpg" data-fancybox-group="fancybox_group" ><img src="thumb/gnp05.jpg" alt="image" /></a>
+    <a title="06:Sun Road- Blending In On A Blue Day" href="gnp06.jpg" data-fancybox-group="fancybox_group" ><img src="thumb/gnp06.jpg" alt="image" /></a>
+    <a title="07:Avalanche Lake- Last Light Before Winter" href="gnp07.jpg" data-fancybox-group="fancybox_group" ><img src="thumb/gnp07.jpg" alt="image" /></a>
+    <a title="08:Windy Wild Goose Island Overlook" href="gnp08.jpg" data-fancybox-group="fancybox_group" ><img src="thumb/gnp08.jpg" alt="image" /></a>
+    <a title="09:Saint Mary Lake Shoreline" href="gnp09.jpg" data-fancybox-group="fancybox_group" ><img src="thumb/gnp09.jpg" alt="image" /></a>
 </div>
-
-
-<div id="output"></div>
 </body>
-<!--<script type="text/javascript" src="Assignment1.js"></script>-->
 </html>
