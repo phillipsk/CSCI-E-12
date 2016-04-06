@@ -1,0 +1,38 @@
+div {
+    padding: 0.5em;
+}
+
+h2 {
+    margin-top: 1.5em;
+}
+body {
+    margin: 2em;
+}
+
+/* Form Validation CSS*/
+
+
+legend {
+    font-weight: bold;
+}
+
+input, textarea {
+    border: thin solid black;
+}
+
+/* error class gets applied by jQuery Validate */
+input.error{
+    border: thin solid red;
+}
+
+label.error {
+    background: url('../images/red_x.jpg') no-repeat;
+    padding-left: 46px;
+    margin-left: .3em;
+    color: red;
+}
+
+/* All else follows the below CSS*/
+* {
+    font-family: Tahoma, Arial, helvetica, sans-serif;
+}

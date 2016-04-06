@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSCI E-12 Week 9 - Form Validation</title>
+    <meta charset="UTF-8">
+    <!-- My CSS code -->
+    <link rel="stylesheet" type="text/css" href="css/contact.css">
+    <!-- jQuery -->
+    <script type="text/javascript" src="js/jquery-1.12.2.min.js"></script>
+    <!-- My Javascript code-->
+    <script type="text/javascript" src="js/contact.js"></script>
+    <!-- jQuery Form Validation plugin-->
+    <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.0/jquery.validate.min.js"></script>
+</head>
+<body>
+<h1>CSCI E-12 Week 9 - Form Validation </h1>
+<h2>Contact Us</h2>
+<form id="contactForm" method="post"
+      action="http://cscie12.dce.harvard.edu/echo">
+    <fieldset>
+        <legend>Please provide us with your information</legend>
+        <p>
+            <label for="name">Name</label> <em>(Required)</em>
+            <br/>
+            <input id="name" name="name" size="25" class="required"/>
+        </p>
+        <p>
+            <label for="email">Email Address</label> <em>(Required)</em>
+            <br/>
+            <input id="email" name="email" size="25" class="required email"/>
+        </p>
+
+        <p>
+            <label for="comments">Comments</label> <em>(Required)</em>
+            <br/>
+            <textarea id="comments" name="comments" class="required" required></textarea>
+        </p>
+        <p>
+            <input class="submit" type="submit" value="Submit Form"/></p>
+    </fieldset>
+</form>
+</body>
+</html>
