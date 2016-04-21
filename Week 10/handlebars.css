@@ -1,0 +1,8 @@
+* { font-family: calibri, helvetica, sans-serif; }
+.handlebars {
+    display: none;
+}
+li.course { padding-top: 0.5em; }
+.course .title { font-weight: bold; }
+.course .faculty { font-style: italic; }
+.course .meeting {font-size: smaller; }

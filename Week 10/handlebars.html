@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Handlebars JS Template assignment</title>
+    <link rel="stylesheet" type="text/css" href="handlebars.css">
+    <!--<script src="handlebars.js" type="text/javascript"></script>-->
+
+    <script src="https://code.jquery.com/jquery-2.1.0.min.js" > </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.1/handlebars.min.js" type="text/javascript"></script>
+</head>
+<h2>Courses</h2>
+
+<div id="courselist">Course list goes here...</div>
+<div id="courselisttemplate" class="handlebars">
+    <p>{{courses.length}} courses were found</p>
+    <ul>
+        {{#courses}}
+        <li class="course">
+            <span class="number">{{course_group}} {{num_int}}{{num_char}}</span>
+            <br/>
+            <span class="title">{{title}}</span>
+            {{#if faculty_text}}
+            <br/>
+            <span class="faculty">{{faculty_text}}</span> {{/if}}
+            {{#if meeting_text}}
+            <br/>
+            <span class="meeting">{{meeting_text}}</span> {{/if}}
+        </li>
+        {{/courses}}
+    </ul>
+</div>
