@@ -11,39 +11,38 @@
 <a href="/~kphillip/">head back home</a></p>
 <!-- Apache Web Server .htaccess contents
 
-Error Document 404 /~kphillip/errors/404.html
-Error Document 405 /~kphillip/errors/405.htm
+ErrorDocument 404 /~kphillip/Week%2011/errors/404.html
 
 #Expiration Headers for all linked files
 ExpiresActive On
-	#7 Days
-	#HTML
-	ExpiresByType text/html	A604800
-	#CSS
-	ExpiresByType text/css	A604800
-	#JS
-	ExpiresByType application/javascript	A604800
-	#images
-	ExpiresByType images/jpeg A604800
-	ExpiresByType images/gif A604800
-	ExpiresByType images/png A604800
+        #7 Days
+        #HTML
+        ExpiresByType text/html A604800
+        #CSS
+        ExpiresByType text/css  A604800
+        #JS
+        ExpiresByType application/javascript    A604800
+        #images
+        ExpiresByType images/jpeg A604800
+        ExpiresByType images/gif A604800
+        ExpiresByType images/png A604800
 
 
 #Output Filters for Compression
-	#HTML
-	AddOutputFilterByType DEFLATE text/html
+        #HTML
+        AddOutputFilterByType DEFLATE text/html
 
-	#CSS
-	AddOutputFilterByType DEFLATE text/css
+        #CSS
+        AddOutputFilterByType DEFLATE text/css
 
-	#JS
-	AddOutputFilterByType DEFLATE text/javascript
-	AddOutputFilterByType DEFLATE application/javascript
+        #JS
+        AddOutputFilterByType DEFLATE text/javascript
+        AddOutputFilterByType DEFLATE application/javascript
 
 #Redirects
-	Redirect 301 /~kphillip/myfavoritebook http://amzn.com/0615284035
-	Redirect 301 /~kphillip/myfavoritecolor http://www.pantone.com/
-	Redirect 301
+        Redirect 301 /~kphillip/myfavoritebook http://amzn.com/0615284035
+        Redirect 301 /~kphillip/myfavoritecolor http://www.pantone.com/
+
 	-->
 </body>
 </html>
