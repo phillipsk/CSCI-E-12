@@ -6,7 +6,7 @@
     <?php include ("includes/htmlhead.php"); ?>
 </head>
 
-<body>
+<body id="IDiv">
 <div class="container">
     <div class="row">
         <?php include ("includes/header.php") ?>

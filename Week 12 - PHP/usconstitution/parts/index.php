@@ -14,7 +14,7 @@
 
 </head>
 
-<body id="part3">
+<body id="IDindex">
     <div class="container">
         <div class="row">
 <!--
