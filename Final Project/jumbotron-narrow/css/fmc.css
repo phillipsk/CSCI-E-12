@@ -1,0 +1,28 @@
+/*Carousel CSS */
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+    margin: auto;
+    width: auto;
+    height: auto;
+    max-height: 500px;
+    overflow: hidden;
+}
+/*My custom Carousel CSS from
+http://stackoverflow.com/questions/13391566/twitter-bootstrap-carousel-different-height-images-cause-bouncing-arrows
+*/
+/*.peopleCarouselImg img {
+    width: auto;
+    margin: auto;
+    height: 500px;
+    max-height: 500px;
+    overflow: hidden;
+}*/
+
+/*
+.carousel img {
+    min-width: 100%;
+    overflow: hidden;
+    width: auto;
+    height: 500px;
+    margin: auto;
+}*/
