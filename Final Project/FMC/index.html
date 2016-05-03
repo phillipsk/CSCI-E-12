@@ -42,27 +42,46 @@
 </head>
 
 <body>
+
+<!-- Facebook JS plugin code from https://developers.facebook.com/docs/plugins/page-plugin-->
+<div id="fb-root"></div>
+<script>(function (d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s);
+    js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
 <!--<div class="header">
     <h1>Welcome to Fellowship Mission Church</h1>
     <h2>"And he said to them all, If any man will come after me, let him deny himself, and take up his cross daily, and
         follow me."</h2>
-</div>
+</div>-->
 
 <nav class="navbar navbar-default">
     <div class="container-fluid">
-        &lt;!&ndash; Brand and toggle get grouped for better mobile display &ndash;&gt;
+        <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">Brand</a>
+            <a class="navbar-brand" href="#">Welcome to Fellowship Mission Church</a>
         </div>
+        <form class="navbar-form navbar-left" role="search">
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Search">
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+        </form>
 
-        &lt;!&ndash; Collect the nav links, forms, and other content for toggling &ndash;&gt;
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <!--<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
                 <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
                 <li><a href="#">Link</a></li>
@@ -98,9 +117,9 @@
                     </ul>
                 </li>
             </ul>
-        </div>&lt;!&ndash; /.navbar-collapse &ndash;&gt;
-    </div>&lt;!&ndash; /.container-fluid &ndash;&gt;
-</nav>-->
+        </div>&lt;!&ndash; /.navbar-collapse &ndash;&gt;-->
+    </div><!-- /.container-fluid -->
+</nav>
 <!--<div class="navbar-collapse collapse">
     <ul id="main-nav" class="nav navbar-nav navbar-right">
         <li><a href="/events/"><span>Eventi</span></a></li>
@@ -264,6 +283,11 @@
             </section>
             <section id="GroupC" class="group">
                 <h3>Ministry Over Legacy</h3>
+                <p>Lorem ipsum dolor sit amet, qui te graecis quaerendum. Ea quo luptatum deseruisse, graecis
+                    scaevola vix te. Sea an probo inciderint, no utroque vituperatoribus pro. Qui et albucius
+                    pericula assentior, id sumo maluisset pri. Bonorum vituperatoribus ut sed, qui ut vitae
+                    patrioque. No vis mazim vituperatoribus, ut nostrud corpora cum, usu te ridens epicuri recteque.
+                    Ne pro agam solum noster, sapientem euripidis reprimique id nec.</p>
                 <div id="GroupCSub1" class="subgroup">
                     <h4>Ministers & Deacons</h4>
                     <p>Lorem ipsum dolor sit amet, qui te graecis quaerendum. Ea quo luptatum deseruisse, graecis
@@ -288,6 +312,60 @@
                         patrioque. No vis mazim vituperatoribus, ut nostrud corpora cum, usu te ridens epicuri recteque.
                         Ne pro agam solum noster, sapientem euripidis reprimique id nec.</p>
                 </div>
+            </section>
+            <section id="GroupD" class="group">
+                <h3>Facebook</h3>
+                <p>Lorem ipsum dolor sit amet, qui te graecis quaerendum. Ea quo luptatum deseruisse, graecis
+                    scaevola vix te. Sea an probo inciderint, no utroque vituperatoribus pro. Qui et albucius
+                    pericula assentior, id sumo maluisset pri. Bonorum vituperatoribus ut sed, qui ut vitae
+                    patrioque. No vis mazim vituperatoribus, ut nostrud corpora cum, usu te ridens epicuri recteque.
+                    Ne pro agam solum noster, sapientem euripidis reprimique id nec.</p>
+                <!-- Facebook Code from https://developers.facebook.com/docs/plugins/page-plugin-->
+                <div class="fb-page" data-href="https://www.facebook.com/fellowshipmission.churchboston/"
+                     data-tabs="timeline" data-small-header="false" data-adapt-container-width="true"
+                     data-hide-cover="false" data-show-facepile="true">
+                    <div class="fb-xfbml-parse-ignore">
+                        <blockquote cite="https://www.facebook.com/fellowshipmission.churchboston/"><a
+                                href="https://www.facebook.com/fellowshipmission.churchboston/">Fellowship Mission
+                            Church</a></blockquote>
+                    </div>
+                </div>
+                <!--                <div id="GroupCSub1" class="subgroup">
+                                    <h4>Ministers & Deacons</h4>
+                                    <p>Lorem ipsum dolor sit amet, qui te graecis quaerendum. Ea quo luptatum deseruisse, graecis
+                                        scaevola vix te. Sea an probo inciderint, no utroque vituperatoribus pro. Qui et albucius
+                                        pericula assentior, id sumo maluisset pri. Bonorum vituperatoribus ut sed, qui ut vitae
+                                        patrioque. No vis mazim vituperatoribus, ut nostrud corpora cum, usu te ridens epicuri recteque.
+                                        Ne pro agam solum noster, sapientem euripidis reprimique id nec.</p>
+                                </div>
+                                <div id="GroupCSub2" class="subgroup">
+                                    <h4>Sisters</h4>
+                                    <p>Lorem ipsum dolor sit amet, qui te graecis quaerendum. Ea quo luptatum deseruisse, graecis
+                                        scaevola vix te. Sea an probo inciderint, no utroque vituperatoribus pro. Qui et albucius
+                                        pericula assentior, id sumo maluisset pri. Bonorum vituperatoribus ut sed, qui ut vitae
+                                        patrioque. No vis mazim vituperatoribus, ut nostrud corpora cum, usu te ridens epicuri recteque.
+                                        Ne pro agam solum noster, sapientem euripidis reprimique id nec.</p>
+                                </div>
+                                <div id="GroupCSub3" class="subgroup">
+                                    <h4>Brothers</h4>
+                                    <p>Lorem ipsum dolor sit amet, qui te graecis quaerendum. Ea quo luptatum deseruisse, graecis
+                                        scaevola vix te. Sea an probo inciderint, no utroque vituperatoribus pro. Qui et albucius
+                                        pericula assentior, id sumo maluisset pri. Bonorum vituperatoribus ut sed, qui ut vitae
+                                        patrioque. No vis mazim vituperatoribus, ut nostrud corpora cum, usu te ridens epicuri recteque.
+                                        Ne pro agam solum noster, sapientem euripidis reprimique id nec.</p>
+                                </div>-->
+            </section>
+            <section id="GroupE" class="group">
+                <h3>Location</h3>
+                <p>Lorem ipsum dolor sit amet, qui te graecis quaerendum. Ea quo luptatum deseruisse, graecis
+                    scaevola vix te. Sea an probo inciderint, no utroque vituperatoribus pro. Qui et albucius
+                    pericula assentior, id sumo maluisset pri. Bonorum vituperatoribus ut sed, qui ut vitae
+                    patrioque. No vis mazim vituperatoribus, ut nostrud corpora cum, usu te ridens epicuri recteque.
+                    Ne pro agam solum noster, sapientem euripidis reprimique id nec.</p>
+
+                <iframe width="600" height="450" frameborder="0" style="border:0"
+                        src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJrbLYRSh644kRN6gvBiijsi4&key=AIzaSyB219TP67--c_r6rGwnyl8Hs61Od_xTWTo"
+                        allowfullscreen></iframe>
             </section>
 
         </div>
