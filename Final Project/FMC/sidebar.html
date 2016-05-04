@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Tech Ministry: Serving God and His Ministries">
+    <meta name="author" content="Tech Ministry">
+    <!--below lines for carousel-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <!--<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>-->
+
+    <link rel="icon" href="img/cross_favicon.ico">
+
+    <title>Welcome to Fellowship Mission Church</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <!-- Bootstrap core JS -->
+    <!--jQuery but note this jQuery version doesn't support data-slide HTML method apparently-->
+    <script type="text/javascript" src="js/jquery-1.12.2.min.js"></script>
+
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/jumbotron-narrow.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!--custom css-->
+    <link rel="stylesheet" type="text/css" href="css/fmc.css">
+    <!--custom JS-->
+
+</head>
+
+<body>
+
+<!-- Facebook JS plugin code from https://developers.facebook.com/docs/plugins/page-plugin-->
+<div id="fb-root"></div>
+<script>(function (d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s);
+    js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<!--<div class="header">
+    <h1>Welcome to Fellowship Mission Church</h1>
+    <h2>"And he said to them all, If any man will come after me, let him deny himself, and take up his cross daily, and
+        follow me."</h2>
+</div>-->
+
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Welcome to Fellowship Mission Church</a>
+        </div>
+        <form class="navbar-form navbar-left" role="search">
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Search">
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <!--<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+                <li><a href="#">Link</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">One more separated link</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <form class="navbar-form navbar-left" role="search">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Search">
+                </div>
+                <button type="submit" class="btn btn-default">Submit</button>
+            </form>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">Link</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>&lt;!&ndash; /.navbar-collapse &ndash;&gt;-->
+    </div><!-- /.container-fluid -->
+</nav>
+<!--<div class="navbar-collapse collapse">
+    <ul id="main-nav" class="nav navbar-nav navbar-right">
+        <li><a href="/events/"><span>Eventi</span></a></li>
+        <li class="hidden-xs hidden-sm"><a>•</a></li>
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><span>Servizi</span></a>
+            <ul class="dropdown-menu">
+                <li>
+                    <a href="http://www.crit-research.it/innovazione-collaborativa/"><span>Innovazione collaborativa</span></a>
+                </li>
+                <li><a href="http://www.crit-research.it/scouting-tecnologico/"><span>Scouting tecnologico</span></a>
+                </li>
+                <li>
+                    <a href="http://www.crit-research.it/sviluppo-dellinnovazione/"><span>Sviluppo dell’innovazione</span></a>
+                </li>
+            </ul>
+        </li>
+        <li class="hidden-xs hidden-sm"><a>•</a></li>
+        <li><a href="/cases/"><span>Casi studio</span></a></li>
+        <li class="hidden-xs hidden-sm"><a>•</a></li>
+        <li><a href="http://www.crit-research.it/blog/"><span>Blog</span></a></li>
+        <li class="hidden-xs hidden-sm"><a>•</a></li>
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><span>Corporate</span></a>
+            <ul style="display: none;" class="dropdown-menu">
+                <li><a href="http://www.crit-research.it/profilo/"><span>Profilo</span></a></li>
+                <li><a href="http://www.crit-research.it/governance/"><span>Governance</span></a></li>
+                <li><a href="/staff/"><span>Staff</span></a></li>
+                <li><a href="/associates/"><span>Le aziende socie</span></a></li>
+                <li><a href="http://www.crit-research.it/network-fornitori-accreditati/"><span>Network Fornitori Accreditati</span></a>
+                </li>
+            </ul>
+        </li>
+        <li class="hidden-xs hidden-sm"><a>•</a></li>
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown"
+                                href="http://www.crit-research.it/contatti/"><span>Contatti</span></a>
+            <ul style="display: none;" class="dropdown-menu">
+                <li><a href="http://www.crit-research.it/contatti/"><span>Contattaci</span></a></li>
+                <li><a href="http://www.crit-research.it/lavora-con-noi/"><span>Lavora con noi</span></a></li>
+            </ul>
+        </li>
+    </ul>
+</div>-->
+
+<!--Sidebar mirroring Bootstrap's BS Docs sidebar-->
+
+<div class="container">
+    <!--replicating bootstrap docs theme-->
+    <div class="col-md-9" role="main">
+        <div class="carousel-container">
+            <br>
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                    <li data-target="#myCarousel" data-slide-to="3"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+
+                    <div class="item active">
+                        <img class="peopleCarouselImg" src="img/fmc_all.jpg" alt="Chania" width="460" height="345">
+                        <!--                    <div class="carousel-caption">
+                                                <h3>Chania</h3>
+                                                <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
+                                            </div>-->
+                    </div>
+
+                    <div class="item">
+                        <img class="peopleCarouselImg" src="img/fmc_worship_beauty.jpg" alt="Chania" width="460"
+                             height="345">
+                        <!--                    <div class="carousel-caption">
+                                                <h3>Chania</h3>
+                                                <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
+                                            </div>-->
+                    </div>
+
+                    <div class="item">
+                        <img class="peopleCarouselImg" src="img/fmc_worship_our_purpose.jpg" alt="Flower" width="460"
+                             height="345">
+                        <!--                    <div class="carousel-caption">
+                                                <h3>Flowers</h3>
+                                                <p>Beatiful flowers in Kolymbari, Crete.</p>
+                                            </div>-->
+                    </div>
+
+                    <div class="item">
+                        <img class="peopleCarouselImg" src="img/fmc_worship_praise.jpg" alt="Flower" width="460"
+                             height="345">
+                        <!--                    <div class="carousel-caption">
+                                                <h3>Flowers</h3>
+                                                <p>Beatiful flowers in Kolymbari, Crete.</p>
+                                            </div>-->
+                    </div>
+
+                </div>
+
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+        <div class="main-content">
+            <section id="GroupA" class="group">
+                <h3>Congregation</h3>
+                <p>Lorem ipsum dolor sit amet, qui te graecis quaerendum. Ea quo luptatum deseruisse, graecis scaevola
+                    vix te. Sea an probo inciderint, no utroque vituperatoribus pro. Qui et albucius pericula assentior,
+                    id sumo maluisset pri. Bonorum vituperatoribus ut sed, qui ut vitae patrioque. No vis mazim
+                    vituperatoribus, ut nostrud corpora cum, usu te ridens epicuri recteque. Ne pro agam solum noster,
+                    sapientem euripidis reprimique id nec.</p>
+                <div id="GroupASub1" class="subgroup">
+                    <h4>History</h4>
+                    <p>Lorem ipsum dolor sit amet, qui te graecis quaerendum. Ea quo luptatum deseruisse, graecis
+                        scaevola vix te. Sea an probo inciderint, no utroque vituperatoribus pro. Qui et albucius
+                        pericula assentior, id sumo maluisset pri. Bonorum vituperatoribus ut sed, qui ut vitae
+                        patrioque. No vis mazim vituperatoribus, ut nostrud corpora cum, usu te ridens epicuri recteque.
+                        Ne pro agam solum noster, sapientem euripidis reprimique id nec.</p>
+                </div>
+                <div id="GroupASub2" class="subgroup">
+                    <h4>About Us</h4>
+                </div>
+            </section>
+            <section id="GroupB" class="group">
+                <h3>Services</h3>
+                <p>Lorem ipsum dolor sit amet, qui te graecis quaerendum. Ea quo luptatum deseruisse, graecis scaevola
+                    vix te. Sea an probo inciderint, no utroque vituperatoribus pro. Qui et albucius pericula assentior,
+                    id sumo maluisset pri. Bonorum vituperatoribus ut sed, qui ut vitae patrioque. No vis mazim
+                    vituperatoribus, ut nostrud corpora cum, usu te ridens epicuri recteque. Ne pro agam solum noster,
+                    sapientem euripidis reprimique id nec.</p>
+                <div id="GroupBSub1" class="subgroup">
+                    <h4>Bible Study</h4>
+                    <p>Lorem ipsum dolor sit amet, qui te graecis quaerendum. Ea quo luptatum deseruisse, graecis
+                        scaevola vix te. Sea an probo inciderint, no utroque vituperatoribus pro. Qui et albucius
+                        pericula assentior, id sumo maluisset pri. Bonorum vituperatoribus ut sed, qui ut vitae
+                        patrioque. No vis mazim vituperatoribus, ut nostrud corpora cum, usu te ridens epicuri recteque.
+                        Ne pro agam solum noster, sapientem euripidis reprimique id nec.</p>
+                </div>
+                <div id="GroupBSub2" class="subgroup">
+                    <h4>Prayer</h4>
+                    <p>Lorem ipsum dolor sit amet, qui te graecis quaerendum. Ea quo luptatum deseruisse, graecis
+                        scaevola vix te. Sea an probo inciderint, no utroque vituperatoribus pro. Qui et albucius
+                        pericula assentior, id sumo maluisset pri. Bonorum vituperatoribus ut sed, qui ut vitae
+                        patrioque. No vis mazim vituperatoribus, ut nostrud corpora cum, usu te ridens epicuri recteque.
+                        Ne pro agam solum noster, sapientem euripidis reprimique id nec.</p>
+                </div>
+                <div id="GroupBSub3" class="subgroup">
+                    <h4>Sunday Worship</h4>
+                    <p>Lorem ipsum dolor sit amet, qui te graecis quaerendum. Ea quo luptatum deseruisse, graecis
+                        scaevola vix te. Sea an probo inciderint, no utroque vituperatoribus pro. Qui et albucius
+                        pericula assentior, id sumo maluisset pri. Bonorum vituperatoribus ut sed, qui ut vitae
+                        patrioque. No vis mazim vituperatoribus, ut nostrud corpora cum, usu te ridens epicuri recteque.
+                        Ne pro agam solum noster, sapientem euripidis reprimique id nec.</p>
+                </div>
+            </section>
+            <section id="GroupC" class="group">
+                <h3>Ministry Over Legacy</h3>
+                <p>Lorem ipsum dolor sit amet, qui te graecis quaerendum. Ea quo luptatum deseruisse, graecis
+                    scaevola vix te. Sea an probo inciderint, no utroque vituperatoribus pro. Qui et albucius
+                    pericula assentior, id sumo maluisset pri. Bonorum vituperatoribus ut sed, qui ut vitae
+                    patrioque. No vis mazim vituperatoribus, ut nostrud corpora cum, usu te ridens epicuri recteque.
+                    Ne pro agam solum noster, sapientem euripidis reprimique id nec.</p>
+                <div id="GroupCSub1" class="subgroup">
+                    <h4>Ministers & Deacons</h4>
+                    <p>Lorem ipsum dolor sit amet, qui te graecis quaerendum. Ea quo luptatum deseruisse, graecis
+                        scaevola vix te. Sea an probo inciderint, no utroque vituperatoribus pro. Qui et albucius
+                        pericula assentior, id sumo maluisset pri. Bonorum vituperatoribus ut sed, qui ut vitae
+                        patrioque. No vis mazim vituperatoribus, ut nostrud corpora cum, usu te ridens epicuri recteque.
+                        Ne pro agam solum noster, sapientem euripidis reprimique id nec.</p>
+                </div>
+                <div id="GroupCSub2" class="subgroup">
+                    <h4>Sisters</h4>
+                    <p>Lorem ipsum dolor sit amet, qui te graecis quaerendum. Ea quo luptatum deseruisse, graecis
+                        scaevola vix te. Sea an probo inciderint, no utroque vituperatoribus pro. Qui et albucius
+                        pericula assentior, id sumo maluisset pri. Bonorum vituperatoribus ut sed, qui ut vitae
+                        patrioque. No vis mazim vituperatoribus, ut nostrud corpora cum, usu te ridens epicuri recteque.
+                        Ne pro agam solum noster, sapientem euripidis reprimique id nec.</p>
+                </div>
+                <div id="GroupCSub3" class="subgroup">
+                    <h4>Brothers</h4>
+                    <p>Lorem ipsum dolor sit amet, qui te graecis quaerendum. Ea quo luptatum deseruisse, graecis
+                        scaevola vix te. Sea an probo inciderint, no utroque vituperatoribus pro. Qui et albucius
+                        pericula assentior, id sumo maluisset pri. Bonorum vituperatoribus ut sed, qui ut vitae
+                        patrioque. No vis mazim vituperatoribus, ut nostrud corpora cum, usu te ridens epicuri recteque.
+                        Ne pro agam solum noster, sapientem euripidis reprimique id nec.</p>
+                </div>
+            </section>
+            <section id="GroupD" class="group">
+                <h3>Facebook</h3>
+                <p>Lorem ipsum dolor sit amet, qui te graecis quaerendum. Ea quo luptatum deseruisse, graecis
+                    scaevola vix te. Sea an probo inciderint, no utroque vituperatoribus pro. Qui et albucius
+                    pericula assentior, id sumo maluisset pri. Bonorum vituperatoribus ut sed, qui ut vitae
+                    patrioque. No vis mazim vituperatoribus, ut nostrud corpora cum, usu te ridens epicuri recteque.
+                    Ne pro agam solum noster, sapientem euripidis reprimique id nec.</p>
+                <br>
+                <!-- Facebook Code from https://developers.facebook.com/docs/plugins/page-plugin-->
+                <div class="fb-page" data-href="https://www.facebook.com/fellowshipmission.churchboston/"
+                     data-tabs="timeline" data-small-header="false" data-adapt-container-width="true"
+                     data-hide-cover="false" data-show-facepile="true">
+                    <div class="fb-xfbml-parse-ignore">
+                        <blockquote cite="https://www.facebook.com/fellowshipmission.churchboston/"><a
+                                href="https://www.facebook.com/fellowshipmission.churchboston/">Fellowship Mission
+                            Church</a></blockquote>
+                    </div>
+                </div>
+                <!--                <div id="GroupCSub1" class="subgroup">
+                                    <h4>Ministers & Deacons</h4>
+                                    <p>Lorem ipsum dolor sit amet, qui te graecis quaerendum. Ea quo luptatum deseruisse, graecis
+                                        scaevola vix te. Sea an probo inciderint, no utroque vituperatoribus pro. Qui et albucius
+                                        pericula assentior, id sumo maluisset pri. Bonorum vituperatoribus ut sed, qui ut vitae
+                                        patrioque. No vis mazim vituperatoribus, ut nostrud corpora cum, usu te ridens epicuri recteque.
+                                        Ne pro agam solum noster, sapientem euripidis reprimique id nec.</p>
+                                </div>
+                                <div id="GroupCSub2" class="subgroup">
+                                    <h4>Sisters</h4>
+                                    <p>Lorem ipsum dolor sit amet, qui te graecis quaerendum. Ea quo luptatum deseruisse, graecis
+                                        scaevola vix te. Sea an probo inciderint, no utroque vituperatoribus pro. Qui et albucius
+                                        pericula assentior, id sumo maluisset pri. Bonorum vituperatoribus ut sed, qui ut vitae
+                                        patrioque. No vis mazim vituperatoribus, ut nostrud corpora cum, usu te ridens epicuri recteque.
+                                        Ne pro agam solum noster, sapientem euripidis reprimique id nec.</p>
+                                </div>
+                                <div id="GroupCSub3" class="subgroup">
+                                    <h4>Brothers</h4>
+                                    <p>Lorem ipsum dolor sit amet, qui te graecis quaerendum. Ea quo luptatum deseruisse, graecis
+                                        scaevola vix te. Sea an probo inciderint, no utroque vituperatoribus pro. Qui et albucius
+                                        pericula assentior, id sumo maluisset pri. Bonorum vituperatoribus ut sed, qui ut vitae
+                                        patrioque. No vis mazim vituperatoribus, ut nostrud corpora cum, usu te ridens epicuri recteque.
+                                        Ne pro agam solum noster, sapientem euripidis reprimique id nec.</p>
+                                </div>-->
+            </section>
+            <section id="GroupE" class="group">
+                <h3>Location</h3>
+                <p>Lorem ipsum dolor sit amet, qui te graecis quaerendum. Ea quo luptatum deseruisse, graecis
+                    scaevola vix te. Sea an probo inciderint, no utroque vituperatoribus pro. Qui et albucius
+                    pericula assentior, id sumo maluisset pri. Bonorum vituperatoribus ut sed, qui ut vitae
+                    patrioque. No vis mazim vituperatoribus, ut nostrud corpora cum, usu te ridens epicuri recteque.
+                    Ne pro agam solum noster, sapientem euripidis reprimique id nec.</p>
+                <br>
+                <iframe width="600" height="450" frameborder="0" style="border:0"
+                        src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJrbLYRSh644kRN6gvBiijsi4&key=AIzaSyB219TP67--c_r6rGwnyl8Hs61Od_xTWTo"
+                        allowfullscreen></iframe>
+            </section>
+
+        </div>
+
+    </div>
+    <div class="col-md-3" role="complementary">
+        <div class="row">
+            <!--Nav Bar -->
+            <nav class="bs-docs-sidebar">
+                <ul id="sidebar" class="nav nav-stacked fixed">
+                    <li>
+                        <a href="#GroupA">Congregation</a>
+                        <ul class="nav nav-stacked">
+                            <li><a href="#GroupASub1">History</a></li>
+                            <li><a href="#GroupASub2">About Us</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#GroupB">Services</a>
+                        <ul class="nav nav-stacked">
+                            <li><a href="#GroupBSub1">Bible Study</a></li>
+                            <li><a href="#GroupBSub2">Prayer</a></li>
+                            <li><a href="#GroupBSub3">Sunday Worship</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#GroupC">Ministry Over Legacy</a>
+                        <ul class="nav nav-stacked">
+                            <li><a href="#GroupCSub1">Ministers & Deacons</a></li>
+                            <li><a href="#GroupCSub2">Sisters</a></li>
+                            <li><a href="#GroupCSub3">Brothers</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <!--Main Content -->
+            <!-- <div class="col-xs-9">
+                 <section id="GroupA" class="group">
+                     <h3>Group A</h3>
+                     <div id="GroupASub1" class="subgroup">
+                         <h4>Group A Sub 1</h4>
+                     </div>
+                     <div id="GroupASub2" class="subgroup">
+                         <h4>Group A Sub 2</h4>
+                     </div>
+                 </section>
+                 <section id="GroupB" class="group">
+                     <h3>Group B</h3>
+                     <div id="GroupBSub1" class="subgroup">
+                         <h4>Group B Sub 1</h4>
+                     </div>
+                     <div id="GroupBSub2" class="subgroup">
+                         <h4>Group B Sub 2</h4>
+                     </div>
+                 </section>
+                 <section id="GroupC" class="group">
+                     <h3>Group C</h3>
+                     <div id="GroupCSub1" class="subgroup">
+                         <h4>Group C Sub 1</h4>
+                     </div>
+                     <div id="GroupCSub2" class="subgroup">
+                         <h4>Group C Sub 2</h4>
+                     </div>
+                 </section>
+             </div>-->
+        </div>
+
+    </div>
+    <!--
+        <div class="col-md-3" role="complementary">
+            <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix-top">
+                <ul class="nav bs-docs-sidenav">
+                    <li class=""><a href="#overview">Overview</a>
+                        <ul class="nav">
+                            <li class=""><a href="#overview-doctype">HTML5 doctype</a></li>
+                            <li class=""><a href="#overview-mobile">Mobile first</a></li>
+                            <li><a href="#overview-type-links">Typography and links</a></li>
+                            <li><a href="#overview-normalize">Normalize.css</a></li>
+                            <li class=""><a href="#overview-container">Containers</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#grid">Grid system</a>
+                        <ul class="nav">
+                            <li><a href="#grid-intro">Introduction</a></li>
+                            <li><a href="#grid-media-queries">Media queries</a></li>
+                            <li><a href="#grid-options">Grid options</a></li>
+                            <li><a href="#grid-less">Less mixins and variables</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <a class="back-to-top" href="#top"> Back to top </a> <a href="#" class="bs-docs-theme-toggle" role="button">
+                Preview theme </a></nav>
+        </div>
+    -->
+
+
+    <div class="row marketing">
+        <div class="col-lg-6">
+            <h4>Subheading</h4>
+            <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+
+            <h4>Subheading</h4>
+            <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet
+                fermentum.</p>
+
+            <h4>Subheading</h4>
+            <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+        </div>
+
+        <div class="col-lg-6">
+            <h4>Subheading</h4>
+            <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+
+            <h4>Subheading</h4>
+            <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet
+                fermentum.</p>
+
+            <h4>Subheading</h4>
+            <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2015 Company, Inc.</p>
+    </footer>
+
+</div> <!-- /container -->
+
+
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+
+<script type="text/javascript" src="js/fmc.js"></script>
+</body>
+</html>
