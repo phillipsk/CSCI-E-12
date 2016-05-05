@@ -137,3 +137,21 @@ margin-bottom: 20px;
 .bs-docs-sidebar .nav>.active>ul.nav {
     display: block;
 }
+
+@media (min-width: 400px) {
+    .fb-page {
+        display: block !important;
+    }
+    .fb-mobile {
+        display: none !important;
+    }
+}
+
+@media (max-width: 399px) {
+    .fb-page {
+        display: none !important;
+    }
+    .fb-mobile {
+        display: block !important ;
+    }
+}
