@@ -44,16 +44,6 @@
 
 <body>
 
-<!-- Facebook JS plugin code from https://developers.facebook.com/docs/plugins/page-plugin-->
-<div id="fb-root"></div>
-<script>(function (d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s);
-    js.id = id;
-    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6";
-    fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
 
 <!--<div class="header">
     <h1>Welcome to Fellowship Mission Church</h1>
@@ -163,7 +153,6 @@
     </ul>
 </div>-->
 
-<!--Sidebar mirroring Bootstrap's BS Docs sidebar-->
 
 <div class="container">
     <!--replicating bootstrap docs theme-->
@@ -230,6 +219,10 @@
                 </a>
             </div>
         </div>
+
+        <!--        &lt;!&ndash; Facebook JS plugin code from https://developers.facebook.com/docs/plugins/page-plugin&ndash;&gt;
+                <div id="fb-root"></div>-->
+        <!--Sidebar mirroring Bootstrap's BS Docs sidebar-->
         <div class="main-content">
             <section id="GroupA" class="group">
                 <h3>Congregation</h3>
@@ -248,6 +241,56 @@
                 </div>
                 <div id="GroupASub2" class="subgroup">
                     <h4>About Us</h4>
+                    <p>Lorem ipsum dolor sit amet, qui te graecis quaerendum. Ea quo luptatum deseruisse, graecis
+                        scaevola vix te. Sea an probo inciderint, no utroque vituperatoribus pro. Qui et albucius
+                        pericula assentior, id sumo maluisset pri. Bonorum vituperatoribus ut sed, qui ut vitae
+                        patrioque. No vis mazim vituperatoribus, ut nostrud corpora cum, usu te ridens epicuri recteque.
+                        Ne pro agam solum noster, sapientem euripidis reprimique id nec.</p>
+                </div>
+                <div id="GroupASub3" class="subgroup">
+                    <h4>Facebook</h4>
+                    <!-- Facebook Code from https://developers.facebook.com/docs/plugins/page-plugin-->
+                    <div class="fb-page" data-href="https://www.facebook.com/fellowshipmission.churchboston/"
+                         data-tabs="timeline" data-small-header="false" data-adapt-container-width="true"
+                         data-hide-cover="false" data-show-facepile="true">
+                        <div class="fb-xfbml-parse-ignore">
+                            <blockquote cite="https://www.facebook.com/fellowshipmission.churchboston/"><a
+                                    href="https://www.facebook.com/fellowshipmission.churchboston/">Fellowship Mission
+                                Church</a></blockquote>
+                        </div>
+                    </div>
+                </div>
+                <div id="GroupASub4" class="subgroup">
+                    <h3>Location</h3>
+                    <p>Lorem ipsum dolor sit amet, qui te graecis quaerendum. Ea quo luptatum deseruisse, graecis
+                        scaevola vix te. Sea an probo inciderint, no utroque vituperatoribus pro. Qui et albucius
+                        pericula assentior, id sumo maluisset pri. Bonorum vituperatoribus ut sed, qui ut vitae
+                        patrioque. No vis mazim vituperatoribus, ut nostrud corpora cum, usu te ridens epicuri recteque.
+                        Ne pro agam solum noster, sapientem euripidis reprimique id nec.</p>
+                    <br>
+                    <iframe width="600" height="450" frameborder="0" style="border:0"
+                            src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJrbLYRSh644kRN6gvBiijsi4&key=AIzaSyB219TP67--c_r6rGwnyl8Hs61Od_xTWTo"
+                            allowfullscreen></iframe>
+                </div>
+                <div id="GroupASub5" class="subgroup">
+                    <h4>Video</h4>
+                    <p>Lorem ipsum dolor sit amet, qui te graecis quaerendum. Ea quo luptatum deseruisse, graecis
+                        scaevola vix te. Sea an probo inciderint, no utroque vituperatoribus pro. Qui et albucius
+                        pericula assentior, id sumo maluisset pri.</p>
+                    <video width="400" controls>
+                        <source src=http://techslides.com/demos/sample-videos/small.mp4 type=video/mp4>
+                        Your browser does not support HTML5 video.
+                    </video>
+                </div>
+                <div id="GroupASub6" class="subgroup">
+                    <h4>Audio</h4>
+                    <p>Lorem ipsum dolor sit amet, qui te graecis quaerendum. Ea quo luptatum deseruisse, graecis
+                        Ne pro agam solum noster, sapientem euripidis reprimique id nec.</p>
+                    <audio controls>
+                        <source src="http://audio.ibeat.org/content/p1rj1s/p1rj1s_-_rockGuitar.mp3">
+                        <source src="http://fellowshipmission.church/mp3/">
+                        Your browser does not support HTML5 audio.
+                    </audio>
                 </div>
             </section>
             <section id="GroupB" class="group">
@@ -315,23 +358,14 @@
                 </div>
             </section>
             <section id="GroupD" class="group">
-                <h3>Facebook</h3>
-                <p>Lorem ipsum dolor sit amet, qui te graecis quaerendum. Ea quo luptatum deseruisse, graecis
-                    scaevola vix te. Sea an probo inciderint, no utroque vituperatoribus pro. Qui et albucius
-                    pericula assentior, id sumo maluisset pri. Bonorum vituperatoribus ut sed, qui ut vitae
-                    patrioque. No vis mazim vituperatoribus, ut nostrud corpora cum, usu te ridens epicuri recteque.
-                    Ne pro agam solum noster, sapientem euripidis reprimique id nec.</p>
-                <br>
-                <!-- Facebook Code from https://developers.facebook.com/docs/plugins/page-plugin-->
-                <div class="fb-page" data-href="https://www.facebook.com/fellowshipmission.churchboston/"
-                     data-tabs="timeline" data-small-header="false" data-adapt-container-width="true"
-                     data-hide-cover="false" data-show-facepile="true">
-                    <div class="fb-xfbml-parse-ignore">
-                        <blockquote cite="https://www.facebook.com/fellowshipmission.churchboston/"><a
-                                href="https://www.facebook.com/fellowshipmission.churchboston/">Fellowship Mission
-                            Church</a></blockquote>
-                    </div>
-                </div>
+                <!--                <h3>Facebook</h3>
+                                <p>Lorem ipsum dolor sit amet, qui te graecis quaerendum. Ea quo luptatum deseruisse, graecis
+                                    scaevola vix te. Sea an probo inciderint, no utroque vituperatoribus pro. Qui et albucius
+                                    pericula assentior, id sumo maluisset pri. Bonorum vituperatoribus ut sed, qui ut vitae
+                                    patrioque. No vis mazim vituperatoribus, ut nostrud corpora cum, usu te ridens epicuri recteque.
+                                    Ne pro agam solum noster, sapientem euripidis reprimique id nec.</p>
+                                <br>-->
+
                 <!--                <div id="GroupCSub1" class="subgroup">
                                     <h4>Ministers & Deacons</h4>
                                     <p>Lorem ipsum dolor sit amet, qui te graecis quaerendum. Ea quo luptatum deseruisse, graecis
@@ -358,16 +392,7 @@
                                 </div>-->
             </section>
             <section id="GroupE" class="group">
-                <h3>Location</h3>
-                <p>Lorem ipsum dolor sit amet, qui te graecis quaerendum. Ea quo luptatum deseruisse, graecis
-                    scaevola vix te. Sea an probo inciderint, no utroque vituperatoribus pro. Qui et albucius
-                    pericula assentior, id sumo maluisset pri. Bonorum vituperatoribus ut sed, qui ut vitae
-                    patrioque. No vis mazim vituperatoribus, ut nostrud corpora cum, usu te ridens epicuri recteque.
-                    Ne pro agam solum noster, sapientem euripidis reprimique id nec.</p>
-                <br>
-                <iframe width="600" height="450" frameborder="0" style="border:0"
-                        src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJrbLYRSh644kRN6gvBiijsi4&key=AIzaSyB219TP67--c_r6rGwnyl8Hs61Od_xTWTo"
-                        allowfullscreen></iframe>
+                <!--<h4>Location</h4>-->
             </section>
 
         </div>
@@ -383,6 +408,10 @@
                         <ul class="nav nav-stacked">
                             <li><a href="#GroupASub1">History</a></li>
                             <li><a href="#GroupASub2">About Us</a></li>
+                            <li><a href="#GroupASub3">Facebook</a></li>
+                            <li><a href="#GroupASub4">Location</a></li>
+                            <li><a href="#GroupASub5">Video</a></li>
+                            <li><a href="#GroupASub6">Audio</a></li>
                         </ul>
                     </li>
                     <li>
