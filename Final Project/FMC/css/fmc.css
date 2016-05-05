@@ -6,17 +6,17 @@ body{
     background-image: url("../img/fmc_all.jpg");
 }*/
 #parallax-first {
-    background: url('../img/fmc_all.jpg') 50% 0 no-repeat fixed;
+    background: url('../img/fmc_all.jpg') 50% 0 / cover no-repeat fixed;
 
 }
 
 #parallax-second{
-    background: url(../img/fmc_worship_praise.jpg) 50% 0 no-repeat fixed;
+    background: url(../img/fmc_worship_praise.jpg) 50% 0 / cover no-repeat fixed;
 
 }
 
 #parallax-third{
-    background: url(../img/fmc_worship_our_purpose.jpg) 50% 0 no-repeat fixed;
+    background: url(../img/fmc_worship_our_purpose.jpg) 50% 0 / cover no-repeat fixed;
 }
 .parallax-background{
     height: 960px;
