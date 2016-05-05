@@ -1,13 +1,43 @@
-<meta charset="utf-8" />
-<meta name=viewport content="width=device-width, initial-scale=1" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" />
-<link rel="stylesheet" href="css/constitution.css" />
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.2/jquery.js"> </script>
-<script type="text/javascript">
-    $(document).ready(function(){
-        var mybodyid = $('body').attr('id');
-        var mynavid = 'li#' + mybodyid;
-        $(mynavid).attr('id','iamhere');
-    });
-</script>
+ <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Tech Ministry: Serving God and His Ministries">
+    <meta name="author" content="Tech Ministry">
+    <!--below lines for carousel-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <!--<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>-->
+
+    <link rel="icon" href="img/cross_favicon.ico">
+
+    <title>Welcome to Fellowship Mission Church</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <!-- Bootstrap core JS -->
+    <!--jQuery but note this jQuery version doesn't support data-slide HTML method apparently-->
+    <script type="text/javascript" src="js/jquery-1.12.2.min.js"></script>
+
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/jumbotron-narrow.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!--custom css-->
+    <link rel="stylesheet" type="text/css" href="css/fmc.css">
+    <!--custom JS-->
+
+    <!--Instructor's parallax JS-->
+    <script type="text/javascript" src="js/parallax.js"></script>
+
+
