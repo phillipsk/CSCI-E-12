@@ -17,12 +17,12 @@ body{
 
 #parallax-third{
     background: url(../img/fmc_worship_our_purpose.jpg) 50% 0 no-repeat fixed;
-
 }
 .parallax-background{
     height: 960px;
     margin: 0 auto;
     position:relative;
+    background-size: contain;
 }
 .parallax-content{
     margin: 0 auto;
