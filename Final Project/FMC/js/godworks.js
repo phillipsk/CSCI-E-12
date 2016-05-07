@@ -51,6 +51,7 @@ window.onload = function () {
 
             var win = window.open();
             win.document.write(txt);
+            win.document.close();
 
             var books = win.window.$('.book');
             var current = -1;
