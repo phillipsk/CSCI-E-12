@@ -1,37 +1,83 @@
 window.onload = function () {
-    var OldTestButton = document.getElementById('bible-list');
+    var bibleList = document.getElementById('bible-list');
 
-};
-// <a class="btn btn-default" href="#" role="button">Genesis</a>
+    var OldTestamentBooksLen = OldTestBooks.length;
+    var NewTestamentBooksLen = NewTestBooksBooks.length;
 
-var OldTestamentBooksLen = FullBooks - 22;
-var NewTestamentBooksLen = FullBooks - OldTestamentBooksLen;
-for (var i = 0; i < OldTestamentBooksLen; i++) {
+    for (var i = 0; i < OldTestamentBooksLen; i++) {
+        var book = OldTestBooks[i];
 
-    //var el = ;
+        var a = document.createElement('a');
+        a.innerHTML = book;
+        a.setAttribute('role', 'button');
+        a.className = 'btn btn-default';
 
-    /*
-     var textLen = text.length;
-     document.getElementById("transcriptText").innerHTML = "";
-     for (var i = 0; i < textLen; i++) {
-     var word = text[i];
+        bibleList.appendChild(a);
 
-     var wordSpan = document.createElement('span');
-     var spaceSpan = document.createElement('span');
-     var wordNode = document.createTextNode(word);
-     var spaceNode = document.createTextNode(' ');
+        $(a).click(function() {
+            getData(this.innerHTML);
+        });
 
-     wordSpan.addEventListener('mouseover', function () {
-     this.setAttribute('class', 'highlight')
-     });
-     wordSpan.addEventListener('mouseout', function (evt) {
-     this.setAttribute('class', 'default')
-     });
+    }
 
-     wordSpan.appendChild(wordNode);
-     spaceSpan.appendChild(spaceNode);
-     textDiv.appendChild(wordSpan);
-     textDiv.appendChild(spaceSpan);
-     }
-     */
+    function getData(book) {
+        $.ajax({
+            url:'http://getbible.net/json',
+            dataType: 'jsonp',
+            data: 'p=' + book + '&v=kjv',
+            jsonp: 'getbible'
+        }).done(function(x) {
+            var txt = '<link rel="stylesheet" href="css/fmc.css" type="text/css" />';
+            txt +='<script type="text/javascript" src="js/jquery-1.12.2.min.js"></script>';
+
+            txt += '<h1>' + book + '</h1>';
+
+            if (x.book) {
+                var chapters = Object.keys(x.book);
+
+                chapters.forEach(function(chapter_nr, idx) {
+                    var chapter = x.book[chapter_nr];
+
+                    if (chapter.chapter) {
+                        var verses = Object.keys(chapter.chapter);
+
+                        verses.forEach(function(verse_nr) {
+                            var verse = chapter.chapter[verse_nr];
+                            txt += "<div class='book book_" + book + "' id='verse_" + book + "-" + chapter_nr + "-" + verse_nr + "'>" + chapter_nr + ":" + verse_nr + " " + verse.verse + "</div>";
+                        });
+                    }
+                });
+            }
+
+            var win = window.open();
+            win.document.write(txt);
+
+            var books = win.window.$('.book');
+            var current = 0;
+
+            win.window.$(win).on('keydown', function(e) {
+                books.removeClass('active');
+
+                var book = books[current];
+                $(book).addClass('active');
+
+                if (e.keyCode === 87) { // W
+                    if (current == 0) {
+                        return;
+                    }
+
+                    current--;
+                } else if (e.keyCode === 83) { // S
+                    if (current == books.length - 1) {
+                        return;
+                    }
+
+                    current++;
+                }
+            });
+
+        } ).fail(function(err) {
+            console.log(err);
+        });
+    }
 }
