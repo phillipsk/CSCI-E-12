@@ -31,61 +31,63 @@ window.onload = function () {
             txt +='<script type="text/javascript" src="js/jquery-1.12.2.min.js"></script>';
 
             txt += '<h1>' + book + '</h1>';
- 
+
             var win = window.open();
             win.document.write(txt);
             win.document.close();
 
-            if (x.book) {
-                var chapters = Object.keys(x.book);
+            window.setTimeout( function() {
+                if (x.book) {
+                    var chapters = Object.keys(x.book);
 
-                chapters.forEach(function(chapter_nr, idx) {
-                    var chapter = x.book[chapter_nr];
+                    chapters.forEach(function(chapter_nr, idx) {
+                        var chapter = x.book[chapter_nr];
 
-                    if (chapter.chapter) {
-                        var verses = Object.keys(chapter.chapter);
+                        if (chapter.chapter) {
+                            var verses = Object.keys(chapter.chapter);
 
-                        verses.forEach(function(verse_nr) {
-                            var verse = chapter.chapter[verse_nr];
+                            verses.forEach(function(verse_nr) {
+                                var verse = chapter.chapter[verse_nr];
 
-                            var div = document.createElement('div');
-                            div.innerHTML = chapter_nr + ":" + verse_nr + " " + verse.verse;
-                            div.className = 'book book_' + book;
-                            div.id="verse_" + book + "-" + chapter_nr + "-" + verse_nr;
+                                var div = document.createElement('div');
+                                div.innerHTML = chapter_nr + ":" + verse_nr + " " + verse.verse;
+                                div.className = 'book book_' + book;
+                                div.id="verse_" + book + "-" + chapter_nr + "-" + verse_nr;
 
-                            win.document.body.appendChild(div);
+                                win.document.body.appendChild(div);
 
-                            //txt += "<div class='book book_" + book + "' id='verse_" + book + "-" + chapter_nr + "-" + verse_nr + "'>" + chapter_nr + ":" + verse_nr + " " + verse.verse + "</div>";
-                        });
-                    }
-                });
-            }
-
-            //win.document.close();
-
-            var books = win.window.$('.book');
-            var current = -1;
-
-            win.window.$(win).on('keydown', function(e) {
-                books.removeClass('active');
-
-                if (e.keyCode === 87) { // W
-                    if (current == 0) {
-                        return;
-                    }
-
-                    current--;
-                } else if (e.keyCode === 83) { // S
-                    if (current == books.length - 1) {
-                        return;
-                    }
-
-                    current++;
+                                //txt += "<div class='book book_" + book + "' id='verse_" + book + "-" + chapter_nr + "-" + verse_nr + "'>" + chapter_nr + ":" + verse_nr + " " + verse.verse + "</div>";
+                            });
+                        }
+                    });
                 }
 
-                var book = books[current];
-                $(book).addClass('active');
-            });
+                //win.document.close();
+
+                var books = win.window.$('.book');
+                var current = -1;
+
+                win.window.$(win).on('keydown', function(e) {
+                    books.removeClass('active');
+
+                    if (e.keyCode === 87) { // W
+                        if (current == 0) {
+                            return;
+                        }
+
+                        current--;
+                    } else if (e.keyCode === 83) { // S
+                        if (current == books.length - 1) {
+                            return;
+                        }
+
+                        current++;
+                    }
+
+                    var book = books[current];
+                    $(book).addClass('active');
+                });
+            }, 200);
 
         } ).fail(function(err) {
             console.log(err);
