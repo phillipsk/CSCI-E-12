@@ -82,6 +82,9 @@ window.onload = function () {
                         }
 
                         current++;
+                    } else if (e.keyCode === 27) {
+                        books.removeClass('active');
+                        return;
                     }
 
                     var book = books[current];
