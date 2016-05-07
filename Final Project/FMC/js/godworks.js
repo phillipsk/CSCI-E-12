@@ -53,13 +53,10 @@ window.onload = function () {
             win.document.write(txt);
 
             var books = win.window.$('.book');
-            var current = 0;
+            var current = -1;
 
             win.window.$(win).on('keydown', function(e) {
                 books.removeClass('active');
-
-                var book = books[current];
-                $(book).addClass('active');
 
                 if (e.keyCode === 87) { // W
                     if (current == 0) {
@@ -74,6 +71,9 @@ window.onload = function () {
 
                     current++;
                 }
+
+                var book = books[current];
+                $(book).addClass('active');
             });
 
         } ).fail(function(err) {
