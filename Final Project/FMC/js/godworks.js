@@ -87,7 +87,7 @@ window.onload = function () {
                     var book = books[current];
                     $(book).addClass('active');
                 });
-            }, 200);
+            }, 1000);
 
         } ).fail(function(err) {
             console.log(err);
