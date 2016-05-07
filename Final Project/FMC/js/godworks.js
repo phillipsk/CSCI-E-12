@@ -31,6 +31,10 @@ window.onload = function () {
             txt +='<script type="text/javascript" src="js/jquery-1.12.2.min.js"></script>';
 
             txt += '<h1>' + book + '</h1>';
+ 
+            var win = window.open();
+            win.document.write(txt);
+            win.document.close();
 
             if (x.book) {
                 var chapters = Object.keys(x.book);
@@ -43,15 +47,21 @@ window.onload = function () {
 
                         verses.forEach(function(verse_nr) {
                             var verse = chapter.chapter[verse_nr];
-                            txt += "<div class='book book_" + book + "' id='verse_" + book + "-" + chapter_nr + "-" + verse_nr + "'>" + chapter_nr + ":" + verse_nr + " " + verse.verse + "</div>";
+
+                            var div = document.createElement('div');
+                            div.innerHTML = chapter_nr + ":" + verse_nr + " " + verse.verse;
+                            div.className = 'book book_' + book;
+                            div.id="verse_" + book + "-" + chapter_nr + "-" + verse_nr;
+
+                            win.document.body.appendChild(div);
+
+                            //txt += "<div class='book book_" + book + "' id='verse_" + book + "-" + chapter_nr + "-" + verse_nr + "'>" + chapter_nr + ":" + verse_nr + " " + verse.verse + "</div>";
                         });
                     }
                 });
             }
 
-            var win = window.open();
-            win.document.write(txt);
-            win.document.close();
+            //win.document.close();
 
             var books = win.window.$('.book');
             var current = -1;
