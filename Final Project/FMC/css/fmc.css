@@ -1,43 +1,63 @@
-body{
+body {
     position: relative;
 }
 
-/*#index{
-    background-image: url("../img/fmc_all.jpg");
-}*/
+/*parallax styling*/
+#good-worship {
+/*    text-align: left;
+    float: left;*/
+    display: inline;
+    text-decoration: line-through;
+    color: #5e5e5e;
+}
+
+#great-wroship {
+/*    text-align: right;
+    float: right;*/
+    display: inline;
+    /*color: #ff2a2c;*/
+    font-weight: bold;
+    font-size: larger;
+    font-family: "Abyssinica SIL", Utopia, sans-serif;
+    color: #f6ff9a
+}
+
 #parallax-first {
     background: url('../img/fmc_all.jpg') 50% 0 / cover no-repeat fixed;
 
 }
 
-#parallax-second{
-    background: url(../img/fmc_worship_praise.jpg) 50% 0 / cover no-repeat fixed;
+#parallax-second {
+    background: url(../img/fmc_save_the_story_give_god_the_glory.jpg) 50% 0 / cover no-repeat fixed;
 
 }
 
-#parallax-third{
-    background: url(../img/fmc_worship_our_purpose.jpg) 50% 0 / cover no-repeat fixed;
+#parallax-third {
+    background: url(../img/fmc_ministry_praise_comp.jpg) 50% 0 / cover no-repeat fixed;
 }
-.parallax-background{
+
+.parallax-background {
     height: 960px;
     margin: 0 auto;
-    position:relative;
+    position: relative;
     background-size: contain;
 }
-.parallax-content{
+
+.parallax-content {
     margin: 0 auto;
     text-align: center;
     top: 350px;
     position: absolute;
     width: 100%;
-    font-size:30pt;
-    color:white;
-    font-weight:bold;
+    font-size: 30pt;
+    color: white;
+    font-weight: bold;
 }
 
+/*Nav Bar CSS*/
 
-.form-group{
-padding-left: 480px;
+.form-group {
+    float: right;
 }
 
 /*Carousel CSS */
@@ -50,6 +70,7 @@ padding-left: 480px;
     overflow: hidden;
     min-height: 500px;
 }
+
 /*My custom Carousel CSS from
 http://stackoverflow.com/questions/13391566/twitter-bootstrap-carousel-different-height-images-cause-bouncing-arrows
 */
@@ -82,16 +103,17 @@ http://stackoverflow.com/questions/13391566/twitter-bootstrap-carousel-different
 
 /* sidebar */
 .bs-docs-sidebar {
-padding-left: 80px;
-/*margin-top: 10px;*/
-margin-bottom: 20px;
+    padding-left: 80px;
+    /*margin-top: 10px;*/
+    margin-bottom: 20px;
 }
+
 .fixed {
     position: fixed;
 }
 
 /* all links */
-.bs-docs-sidebar .nav>li>a {
+.bs-docs-sidebar .nav > li > a {
     color: #999;
     border-left: 2px solid transparent;
     padding: 4px 20px;
@@ -100,7 +122,7 @@ margin-bottom: 20px;
 }
 
 /* nested links */
-.bs-docs-sidebar .nav .nav>li>a {
+.bs-docs-sidebar .nav .nav > li > a {
     padding-top: 1px;
     padding-bottom: 1px;
     padding-left: 30px;
@@ -108,24 +130,26 @@ margin-bottom: 20px;
 }
 
 /* active & hover links */
-.bs-docs-sidebar .nav>.active>a,
-.bs-docs-sidebar .nav>li>a:hover,
-.bs-docs-sidebar .nav>li>a:focus {
+.bs-docs-sidebar .nav > .active > a,
+.bs-docs-sidebar .nav > li > a:hover,
+.bs-docs-sidebar .nav > li > a:focus {
     color: #563d7c;
     text-decoration: none;
     background-color: transparent;
     border-left-color: #563d7c;
 }
+
 /* all active links */
-.bs-docs-sidebar .nav>.active>a,
-.bs-docs-sidebar .nav>.active:hover>a,
-.bs-docs-sidebar .nav>.active:focus>a {
+.bs-docs-sidebar .nav > .active > a,
+.bs-docs-sidebar .nav > .active:hover > a,
+.bs-docs-sidebar .nav > .active:focus > a {
     font-weight: 700;
 }
+
 /* nested active links */
-.bs-docs-sidebar .nav .nav>.active>a,
-.bs-docs-sidebar .nav .nav>.active:hover>a,
-.bs-docs-sidebar .nav .nav>.active:focus>a {
+.bs-docs-sidebar .nav .nav > .active > a,
+.bs-docs-sidebar .nav .nav > .active:hover > a,
+.bs-docs-sidebar .nav .nav > .active:focus > a {
     font-weight: 500;
 }
 
@@ -133,15 +157,18 @@ margin-bottom: 20px;
 .bs-docs-sidebar .nav ul.nav {
     display: none;
 }
+
 /* show active nested list */
-.bs-docs-sidebar .nav>.active>ul.nav {
+.bs-docs-sidebar .nav > .active > ul.nav {
     display: block;
 }
 
+/* Facebook plugin*/
 @media (min-width: 400px) {
     .fb-page {
         display: block !important;
     }
+
     .fb-mobile {
         display: none !important;
     }
@@ -151,11 +178,9 @@ margin-bottom: 20px;
     .fb-page {
         display: none !important;
     }
+
     .fb-mobile {
-        display: block !important ;
+        display: block !important;
     }
 }
 
-.book:hover, .book.active {
-    background-color: yellow;
-}
