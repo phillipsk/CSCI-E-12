@@ -56,7 +56,7 @@ body {
 
 /*Nav Bar CSS*/
 
-.form-group {
+.navbar-form, .navbar-left{
     float: right;
 }
 

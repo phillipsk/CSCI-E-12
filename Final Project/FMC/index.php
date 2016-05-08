@@ -6,18 +6,6 @@
 </head>
 
 <body>
-<!--
-TODO:
-use JS to dump audio files into a audio-player
-link nav bar universally across all pages, i.e. code it once and have it appear on multiple pages
-utilize php includes?
-    audio player
-video player
-bible study teaching series
-parralax background image on index.html
-1 CSS sheet with page specific css
-prayer line form validation
--->
 
 <?php
 include('includes/nav.php');
