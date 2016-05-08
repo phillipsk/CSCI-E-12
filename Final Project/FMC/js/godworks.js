@@ -27,7 +27,7 @@ window.onload = function () {
             data: 'p=' + book + '&v=kjv',
             jsonp: 'getbible'
         }).done(function(x) {
-            var txt = '<link rel="stylesheet" href="css/fmc.css" type="text/css" />';
+            var txt = '<link rel="stylesheet" href="css/godworks.css" type="text/css">';
             txt +='<script type="text/javascript" src="js/jquery-1.12.2.min.js"></script>';
 
             txt += '<h1>' + book + '</h1>';
