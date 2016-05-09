@@ -2,3 +2,27 @@
 .book:hover, .book.active {
     background-color: yellow;
 }
+
+/*
+.navbar-header{
+    width: 60%;
+    color: #50dd31;
+!*    padding: inherit;
+    margin: auto;*!
+}*/
+
+h1{
+    color: #d43f3a;
+    font-family: calibri, helvetica, sans-serif;
+}
+body{
+    margin: auto;
+}
+
+.container-fluid {
+    padding-right: 15px;
+    padding-left: 35px;
+    margin-right: auto;
+    margin-left: auto;
+
+}

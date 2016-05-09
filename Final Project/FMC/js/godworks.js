@@ -1,8 +1,9 @@
 window.onload = function () {
-    var bibleList = document.getElementById('bible-list');
+    var bibleListOld = document.getElementById('bible-list-old');
+    var bibleListNew = document.getElementById('bible-list-new');
 
     var OldTestamentBooksLen = OldTestBooks.length;
-    var NewTestamentBooksLen = NewTestBooksBooks.length;
+    var NewTestamentBooksLen = NewTestBooks.length;
 
     for (var i = 0; i < OldTestamentBooksLen; i++) {
         var book = OldTestBooks[i];
@@ -12,7 +13,22 @@ window.onload = function () {
         a.setAttribute('role', 'button');
         a.className = 'btn btn-default';
 
-        bibleList.appendChild(a);
+        bibleListOld.appendChild(a);
+
+        $(a).click(function() {
+            getData(this.innerHTML);
+        });
+
+    }
+    for (var i = 0; i < NewTestamentBooksLen; i++) {
+        var book = NewTestBooks[i];
+
+        var a = document.createElement('a');
+        a.innerHTML = book;
+        a.setAttribute('role', 'button');
+        a.className = 'btn btn-default';
+
+        bibleListNew.appendChild(a);
 
         $(a).click(function() {
             getData(this.innerHTML);
@@ -20,6 +36,9 @@ window.onload = function () {
 
     }
 
+    /* What's going on here??????????
+    * TODO:
+    * form validation with custom search box for specific passages*/
     function getData(book) {
         $.ajax({
             url:'http://getbible.net/json',

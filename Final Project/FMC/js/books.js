@@ -15,7 +15,7 @@ var OldTestBooks = [
     'Haggai', 'Zechariah', 'Malachi'
 ];
 
-var NewTestBooksBooks = [
+var NewTestBooks = [
     'Matthew',
     'Mark', 'Luke', 'John', 'Acts',
     'Romans', '1 Corinthians', '2 Corinthians', 'Galatians',
