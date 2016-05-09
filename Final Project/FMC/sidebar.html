@@ -49,11 +49,18 @@
 <!--TODO:
 make object
 make prototypes and arrays and traverse these sections within the BS docs sidebar component
-audio player -- update on php time stamp?
+audio player -update on php time stamp?
 video player
 bible study teaching series
-prayer line form validation
+prayer line awareness
+prayer card form validation + captcha
 photo of Pastor & Pastor section add background from old site
+VALIDATE HTML & CSS
+bible study teaching series
+replace carousel with something more appealing on mobile, perhaps a better slider
+form validation seach passage in API
+long load on parallax background image load
+apache 404 pages
 -->
 
 <!--<div class="header">
@@ -156,14 +163,6 @@ photo of Pastor & Pastor section add background from old site
                     vituperatoribus, ut nostrud corpora cum, usu te ridens epicuri recteque. Ne pro agam solum noster,
                     sapientem euripidis reprimique id nec.</p>
                 <div id="GroupASub1" class="subgroup">
-                    <h4>History</h4>
-                    <p>Lorem ipsum dolor sit amet, qui te graecis quaerendum. Ea quo luptatum deseruisse, graecis
-                        scaevola vix te. Sea an probo inciderint, no utroque vituperatoribus pro. Qui et albucius
-                        pericula assentior, id sumo maluisset pri. Bonorum vituperatoribus ut sed, qui ut vitae
-                        patrioque. No vis mazim vituperatoribus, ut nostrud corpora cum, usu te ridens epicuri recteque.
-                        Ne pro agam solum noster, sapientem euripidis reprimique id nec.</p>
-                </div>
-                <div id="GroupASub2" class="subgroup">
                     <h4>About Us</h4>
                     <p>Lorem ipsum dolor sit amet, qui te graecis quaerendum. Ea quo luptatum deseruisse, graecis
                         scaevola vix te. Sea an probo inciderint, no utroque vituperatoribus pro. Qui et albucius
@@ -171,7 +170,31 @@ photo of Pastor & Pastor section add background from old site
                         patrioque. No vis mazim vituperatoribus, ut nostrud corpora cum, usu te ridens epicuri recteque.
                         Ne pro agam solum noster, sapientem euripidis reprimique id nec.</p>
                 </div>
+                <div id="GroupASub2" class="subgroup">
+                    <h4>Pastor Mitchell</h4>
+                    <img src="img/fmc_preaching_best1-400x600.jpg" alt="Pastor Elder Malcolm M. Mitchell"
+                         id="pastor_photo">
+                    <p>District Elder Malcolm Mitchell is the Pastor of Fellowship Mission Church. His preaching
+                        ministry was birthed at age 18 under the discipleship of Regional Apostle HA Moultrie in the
+                        Mission Church of Christ. Elder Mitchell along with a group of his struggling high school
+                        students, was led by the Holy Ghost to start a Bible study in the city of Boston that quickly
+                        grew into a worshipping congregation. To God be the Glory. Elder Mitchell is happily married to
+                        his wife of 18 years – Sister and affectionately known as First lady Carla Mitchell. They have 3
+                        wonderful children, Malcolm jr, Matthew and Mia. Pastor Mitchell holds a Master’s degree in
+                        education and a certificate of advanced graduate studies in educational administration – he
+                        currently works in the Boston public school system as a teacher and wrestling coach. He is also
+                        Pastoring Fellowship Mission Church full time as well and looking for the Lord to use the church
+                        to Fellowship Believers into the Body of Christ.</p>
+                </div>
                 <div id="GroupASub3" class="subgroup">
+                    <h4>History</h4>
+                    <p>Lorem ipsum dolor sit amet, qui te graecis quaerendum. Ea quo luptatum deseruisse, graecis
+                        scaevola vix te. Sea an probo inciderint, no utroque vituperatoribus pro. Qui et albucius
+                        pericula assentior, id sumo maluisset pri. Bonorum vituperatoribus ut sed, qui ut vitae
+                        patrioque. No vis mazim vituperatoribus, ut nostrud corpora cum, usu te ridens epicuri recteque.
+                        Ne pro agam solum noster, sapientem euripidis reprimique id nec.</p>
+                </div>
+                <div id="GroupASub4" class="subgroup">
                     <h4>Facebook</h4>
                     <!-- Facebook Code from https://developers.facebook.com/docs/plugins/page-plugin-->
 
@@ -197,7 +220,7 @@ photo of Pastor & Pastor section add background from old site
                         </div>
                     </div>
                 </div>
-                <div id="GroupASub4" class="subgroup">
+                <div id="GroupASub5" class="subgroup">
                     <h3>Location</h3>
                     <p>Lorem ipsum dolor sit amet, qui te graecis quaerendum. Ea quo luptatum deseruisse, graecis
                         scaevola vix te. Sea an probo inciderint, no utroque vituperatoribus pro. Qui et albucius
@@ -205,11 +228,11 @@ photo of Pastor & Pastor section add background from old site
                         patrioque. No vis mazim vituperatoribus, ut nostrud corpora cum, usu te ridens epicuri recteque.
                         Ne pro agam solum noster, sapientem euripidis reprimique id nec.</p>
                     <br>
-                    <iframe width="600" height="450" frameborder="0" style="border:0"
+                    <iframe width="600" height="450" style="border:0"
                             src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJrbLYRSh644kRN6gvBiijsi4&key=AIzaSyB219TP67--c_r6rGwnyl8Hs61Od_xTWTo"
                             allowfullscreen></iframe>
                 </div>
-                <div id="GroupASub5" class="subgroup">
+                <div id="GroupASub6" class="subgroup">
                     <h4>Video</h4>
                     <p>Lorem ipsum dolor sit amet, qui te graecis quaerendum. Ea quo luptatum deseruisse, graecis
                         scaevola vix te. Sea an probo inciderint, no utroque vituperatoribus pro. Qui et albucius
@@ -219,7 +242,7 @@ photo of Pastor & Pastor section add background from old site
                         Your browser does not support HTML5 video.
                     </video>
                 </div>
-                <div id="GroupASub6" class="subgroup">
+                <div id="GroupASub7" class="subgroup">
                     <h4>Audio</h4>
                     <p>Lorem ipsum dolor sit amet, qui te graecis quaerendum. Ea quo luptatum deseruisse, graecis
                         Ne pro agam solum noster, sapientem euripidis reprimique id nec.</p>
@@ -238,7 +261,8 @@ photo of Pastor & Pastor section add background from old site
                     vituperatoribus, ut nostrud corpora cum, usu te ridens epicuri recteque. Ne pro agam solum noster,
                     sapientem euripidis reprimique id nec.</p>
                 <div id="GroupBSub1" class="subgroup">
-                    <h4>Bible Study</h4>
+                    <h4 class="service-time">Bible Study</h4>
+                    <h5>Tuesdays beginning at 7:30pm</h5>
                     <p>Lorem ipsum dolor sit amet, qui te graecis quaerendum. Ea quo luptatum deseruisse, graecis
                         scaevola vix te. Sea an probo inciderint, no utroque vituperatoribus pro. Qui et albucius
                         pericula assentior, id sumo maluisset pri. Bonorum vituperatoribus ut sed, qui ut vitae
@@ -247,11 +271,14 @@ photo of Pastor & Pastor section add background from old site
                 </div>
                 <div id="GroupBSub2" class="subgroup">
                     <h4>Prayer</h4>
-                    <p>Lorem ipsum dolor sit amet, qui te graecis quaerendum. Ea quo luptatum deseruisse, graecis
-                        scaevola vix te. Sea an probo inciderint, no utroque vituperatoribus pro. Qui et albucius
-                        pericula assentior, id sumo maluisset pri. Bonorum vituperatoribus ut sed, qui ut vitae
-                        patrioque. No vis mazim vituperatoribus, ut nostrud corpora cum, usu te ridens epicuri recteque.
-                        Ne pro agam solum noster, sapientem euripidis reprimique id nec.</p>
+                    <h5 id="no-bold" class="service-time">Sanctuary Prayer beginning at 7:30pm</h5> <h5 class="service-time">
+                        Every Firday</h5>
+                        <p>Lorem ipsum dolor sit amet, qui te graecis quaerendum. Ea quo luptatum deseruisse, graecis
+                            scaevola vix te. Sea an probo inciderint, no utroque vituperatoribus pro. Qui et albucius
+                            pericula assentior, id sumo maluisset pri. Bonorum vituperatoribus ut sed, qui ut vitae
+                            patrioque. No vis mazim vituperatoribus, ut nostrud corpora cum, usu te ridens epicuri
+                            recteque.
+                            Ne pro agam solum noster, sapientem euripidis reprimique id nec.</p>
                 </div>
                 <div id="GroupBSub3" class="subgroup">
                     <h4>Sunday Worship</h4>
@@ -294,7 +321,7 @@ photo of Pastor & Pastor section add background from old site
                         Ne pro agam solum noster, sapientem euripidis reprimique id nec.</p>
                 </div>
             </section>
-            <section id="GroupD" class="group">
+            <!--<section id="GroupD" class="group">-->
                 <!--                <h3>Facebook</h3>
                                 <p>Lorem ipsum dolor sit amet, qui te graecis quaerendum. Ea quo luptatum deseruisse, graecis
                                     scaevola vix te. Sea an probo inciderint, no utroque vituperatoribus pro. Qui et albucius
@@ -327,11 +354,11 @@ photo of Pastor & Pastor section add background from old site
                                         patrioque. No vis mazim vituperatoribus, ut nostrud corpora cum, usu te ridens epicuri recteque.
                                         Ne pro agam solum noster, sapientem euripidis reprimique id nec.</p>
                                 </div>-->
-            </section>
+        <!--    </section>
             <section id="GroupE" class="group">
-                <!--<h4>Location</h4>-->
+                &lt;!&ndash;<h4>Location</h4>&ndash;&gt;
             </section>
-
+-->
         </div>
 
     </div>
@@ -343,12 +370,13 @@ photo of Pastor & Pastor section add background from old site
                     <li>
                         <a href="#GroupA">Congregation</a>
                         <ul class="nav nav-stacked">
-                            <li><a href="#GroupASub1">History</a></li>
-                            <li><a href="#GroupASub2">About Us</a></li>
-                            <li><a href="#GroupASub3">Facebook</a></li>
-                            <li><a href="#GroupASub4">Location</a></li>
-                            <li><a href="#GroupASub5">Video</a></li>
-                            <li><a href="#GroupASub6">Audio</a></li>
+                            <li><a href="#GroupASub1">About Us</a></li>
+                            <li><a href="#GroupASub2">Pastor</a></li>
+                            <li><a href="#GroupASub3">History</a></li>
+                            <li><a href="#GroupASub4">Facebook</a></li>
+                            <li><a href="#GroupASub5">Location</a></li>
+                            <li><a href="#GroupASub6">Video</a></li>
+                            <li><a href="#GroupASub7">Audio</a></li>
                         </ul>
                     </li>
                     <li>

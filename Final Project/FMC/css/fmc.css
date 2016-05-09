@@ -2,38 +2,21 @@ body {
     position: relative;
 }
 
-/*parallax styling*/
-#good-worship {
-/*    text-align: left;
-    float: left;*/
-    display: inline;
-    text-decoration: line-through;
-    color: #5e5e5e;
-}
-
-#great-wroship {
-/*    text-align: right;
-    float: right;*/
-    display: inline;
-    /*color: #ff2a2c;*/
-    font-weight: bold;
-    font-size: larger;
-    font-family: "Abyssinica SIL", Utopia, sans-serif;
-    color: #f6ff9a
-}
-
+/*#index{
+    background-image: url("../img/fmc_all.jpg");
+}*/
 #parallax-first {
     background: url('../img/fmc_all.jpg') 50% 0 / cover no-repeat fixed;
 
 }
 
 #parallax-second {
-    background: url(../img/fmc_save_the_story_give_god_the_glory.jpg) 50% 0 / cover no-repeat fixed;
+    background: url(../img/fmc_worship_praise.jpg) 50% 0 / cover no-repeat fixed;
 
 }
 
 #parallax-third {
-    background: url(../img/fmc_ministry_praise_comp.jpg) 50% 0 / cover no-repeat fixed;
+    background: url(../img/fmc_worship_our_purpose.jpg) 50% 0 / cover no-repeat fixed;
 }
 
 .parallax-background {
@@ -54,10 +37,8 @@ body {
     font-weight: bold;
 }
 
-/*Nav Bar CSS*/
-
-.navbar-form, .navbar-left{
-    float: right;
+.form-group {
+    padding-left: 480px;
 }
 
 /*Carousel CSS */
@@ -163,7 +144,6 @@ http://stackoverflow.com/questions/13391566/twitter-bootstrap-carousel-different
     display: block;
 }
 
-/* Facebook plugin*/
 @media (min-width: 400px) {
     .fb-page {
         display: block !important;
@@ -182,4 +162,27 @@ http://stackoverflow.com/questions/13391566/twitter-bootstrap-carousel-different
     .fb-mobile {
         display: block !important;
     }
+}
+
+/*Pastor Photo*/
+#pastor_photo {
+    padding: 1.3em;
+}
+
+h5 {
+    font-weight: 600;
+    display: inline;
+}
+
+#no-bold {
+    font-weight: normal;
+    display: inline;
+}
+
+.subgroup {
+    padding: 1em;
+}
+
+.service-time {
+    /*padding-top: 1em;*/
 }
