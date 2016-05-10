@@ -21,3 +21,10 @@ $('body').scrollspy({
     js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
     fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));
+
+// Simple one line JS code to action the Form Validation plugin
+// http://jqueryvalidation.org/documentation/
+
+$(document).ready(function () {
+    $("#contactForm").validate();
+});

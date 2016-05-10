@@ -43,24 +43,28 @@
     <!--This is NOT A PHP file-->
     <!--<?php include ("includes/htmlhead.php"); ?>-->
 
+    <!-- jQuery Form Validation plugin-->
+    <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.0/jquery.validate.min.js"></script>
+
 </head>
 
 <body>
-<!--TODO:
-make object
-make prototypes and arrays and traverse these sections within the BS docs sidebar component
-audio player -update on php time stamp?
-video player
-bible study teaching series
-prayer line awareness
-prayer card form validation + captcha
-photo of Pastor & Pastor section add background from old site
-VALIDATE HTML & CSS
-bible study teaching series
-replace carousel with something more appealing on mobile, perhaps a better slider
-form validation seach passage in API
-long load on parallax background image load
-apache 404 pages
+<!--
+TODO: make prototypes and arrays and traverse these sections within the BS docs sidebar component
+TODO: audio player -update on php time stamp?
+TODO: video player
+TODO: bible study teaching series
+TODO: prayer line awareness
+TODO: prayer card form validation + captcha
+TODO: photo of Pastor & Pastor section add background from old site
+TODO: VALIDATE HTML & CSS
+TODO: bible study teaching series
+TODO: replace carousel with something more appealing on mobile, perhaps a better slider
+TODO: form validation seach passage in API
+TODO: long load on parallax background image load
+TODO: apache 404 pages
+TODO: Form validation echo link - action?
 -->
 
 <!--<div class="header">
@@ -151,8 +155,6 @@ apache 404 pages
             </div>
         </div>
 
-        <!--        &lt;!&ndash; Facebook JS plugin code from https://developers.facebook.com/docs/plugins/page-plugin&ndash;&gt;
-                <div id="fb-root"></div>-->
         <!--Sidebar mirroring Bootstrap's BS Docs sidebar-->
         <div class="main-content">
             <section id="GroupA" class="group">
@@ -198,15 +200,28 @@ apache 404 pages
                     <h4>Facebook</h4>
                     <!-- Facebook Code from https://developers.facebook.com/docs/plugins/page-plugin-->
 
+                    <!--                    <div class="fb-page" data-href="https://www.facebook.com/fellowshipmission.churchboston/"
+                                             data-tabs="timeline" data-small-header="false" data-adapt-container-width="true"
+                                             data-hide-cover="false" data-show-facepile="true">
+                                            <div class="fb-xfbml-parse-ignore">
+                                                <blockquote cite="https://www.facebook.com/fellowshipmission.churchboston/"><a
+                                                        href="https://www.facebook.com/fellowshipmission.churchboston/">Fellowship Mission
+                                                    Church</a></blockquote>
+                                            </div>
+                                        </div>-->
                     <div class="fb-page" data-href="https://www.facebook.com/fellowshipmission.churchboston/"
-                         data-tabs="timeline" data-small-header="false" data-adapt-container-width="true"
-                         data-hide-cover="false" data-show-facepile="true">
+                         data-tabs="timeline" data-width="560" data-height="400" data-small-header="false"
+                         data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
                         <div class="fb-xfbml-parse-ignore">
                             <blockquote cite="https://www.facebook.com/fellowshipmission.churchboston/"><a
                                     href="https://www.facebook.com/fellowshipmission.churchboston/">Fellowship Mission
                                 Church</a></blockquote>
                         </div>
                     </div>
+                    <!-- same as FB div code above except as an iFrame-->
+                    <!--                 <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffellowshipmission.churchboston%2F&tabs=timeline&width=560&height=400&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+                                             width="560" height="400" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                                             allowTransparency="true"></iframe>-->
 
                     <div class="fb-mobile">
                         <!-- Load Facebook SDK for JavaScript -->
@@ -221,28 +236,28 @@ apache 404 pages
                     </div>
                 </div>
                 <div id="GroupASub5" class="subgroup">
-                    <h3>Location</h3>
-                    <p>Lorem ipsum dolor sit amet, qui te graecis quaerendum. Ea quo luptatum deseruisse, graecis
-                        scaevola vix te. Sea an probo inciderint, no utroque vituperatoribus pro. Qui et albucius
-                        pericula assentior, id sumo maluisset pri. Bonorum vituperatoribus ut sed, qui ut vitae
-                        patrioque. No vis mazim vituperatoribus, ut nostrud corpora cum, usu te ridens epicuri recteque.
-                        Ne pro agam solum noster, sapientem euripidis reprimique id nec.</p>
-                    <br>
-                    <iframe width="600" height="450" style="border:0"
-                            src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJrbLYRSh644kRN6gvBiijsi4&key=AIzaSyB219TP67--c_r6rGwnyl8Hs61Od_xTWTo"
-                            allowfullscreen></iframe>
-                </div>
-                <div id="GroupASub6" class="subgroup">
                     <h4>Video</h4>
                     <p>Lorem ipsum dolor sit amet, qui te graecis quaerendum. Ea quo luptatum deseruisse, graecis
                         scaevola vix te. Sea an probo inciderint, no utroque vituperatoribus pro. Qui et albucius
                         pericula assentior, id sumo maluisset pri.</p>
+                    <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Ffellowshipmission.churchboston%2Fvideos%2F820623138042778%2F&show_text=1&width=560"
+                            width="560" height="400" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                            allowTransparency="true"></iframe>
+                    <p>Lorem ipsum dolor sit amet, qui te graecis quaerendum. Ea quo luptatum deseruisse, graecis
+                        scaevola vix te. Sea an probo inciderint, no utroque vituperatoribus pro. Qui et albucius
+                        pericula assentior, id sumo maluisset pri.</p>
+                    <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Ffellowshipmission.churchboston%2Fvideos%2Fvb.748935755211517%2F829073527197739%2F%3Ftype%3D3&show_text=1&width=560"
+                            width="560" height="439" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                            allowTransparency="true"></iframe>
                     <video width="400" controls>
+                        <p>Lorem ipsum dolor sit amet, qui te graecis quaerendum. Ea quo luptatum deseruisse, graecis
+                            scaevola vix te. Sea an probo inciderint, no utroque vituperatoribus pro. Qui et albucius
+                            pericula assentior, id sumo maluisset pri.</p>
                         <source src=http://techslides.com/demos/sample-videos/small.mp4 type=video/mp4>
                         Your browser does not support HTML5 video.
                     </video>
                 </div>
-                <div id="GroupASub7" class="subgroup">
+                <div id="GroupASub6" class="subgroup">
                     <h4>Audio</h4>
                     <p>Lorem ipsum dolor sit amet, qui te graecis quaerendum. Ea quo luptatum deseruisse, graecis
                         Ne pro agam solum noster, sapientem euripidis reprimique id nec.</p>
@@ -251,6 +266,35 @@ apache 404 pages
                         <source src="http://fellowshipmission.church/mp3/">
                         Your browser does not support HTML5 audio.
                     </audio>
+                </div>
+                <div id="GroupASub7" class="subgroup">
+                    <h4>Children's Church</h4>
+                    <p>Lorem ipsum dolor sit amet, qui te graecis quaerendum. Ea quo luptatum deseruisse, graecis
+                        scaevola vix te. Sea an probo inciderint, no utroque vituperatoribus pro. Qui et albucius
+                        pericula assentior, id sumo maluisset pri.</p>
+                    <img src="img/fmc_c"
+                    <p>Lorem ipsum dolor sit amet, qui te graecis quaerendum. Ea quo luptatum deseruisse, graecis
+                        scaevola vix te. Sea an probo inciderint, no utroque vituperatoribus pro. Qui et albucius
+                        pericula assentior, id sumo maluisset pri. Bonorum vituperatoribus ut sed, qui ut vitae
+                        patrioque. No vis mazim vituperatoribus, ut nostrud corpora cum, usu te ridens epicuri recteque.
+                        Ne pro agam solum noster, sapientem euripidis reprimique id nec.</p>
+                    <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ffellowshipmission.churchboston%2Fposts%2F822141601224265&width=500" width="500" height="825" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+                </div>
+                <div id="GroupASub8" class="subgroup">
+                    <h4>Sunday School</h4>
+                    <p>Lorem ipsum dolor sit amet, qui te graecis quaerendum. Ea quo luptatum deseruisse, graecis
+                        scaevola vix te. Sea an probo inciderint, no utroque vituperatoribus pro. Qui et albucius
+                        pericula assentior, id sumo maluisset pri. Bonorum vituperatoribus ut sed, qui ut vitae
+                        patrioque. No vis mazim vituperatoribus, ut nostrud corpora cum, usu te ridens epicuri recteque.
+                        Ne pro agam solum noster, sapientem euripidis reprimique id nec.</p>
+                </div>
+                <div id="GroupASub9" class="subgroup">
+                    <h4>Community Outreach</h4>
+                    <p>Lorem ipsum dolor sit amet, qui te graecis quaerendum. Ea quo luptatum deseruisse, graecis
+                        scaevola vix te. Sea an probo inciderint, no utroque vituperatoribus pro. Qui et albucius
+                        pericula assentior, id sumo maluisset pri. Bonorum vituperatoribus ut sed, qui ut vitae
+                        patrioque. No vis mazim vituperatoribus, ut nostrud corpora cum, usu te ridens epicuri recteque.
+                        Ne pro agam solum noster, sapientem euripidis reprimique id nec.</p>
                 </div>
             </section>
             <section id="GroupB" class="group">
@@ -268,17 +312,21 @@ apache 404 pages
                         pericula assentior, id sumo maluisset pri. Bonorum vituperatoribus ut sed, qui ut vitae
                         patrioque. No vis mazim vituperatoribus, ut nostrud corpora cum, usu te ridens epicuri recteque.
                         Ne pro agam solum noster, sapientem euripidis reprimique id nec.</p>
+                    <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ffellowshipmission.churchboston%2Fposts%2F822821521156273%3A0&width=500"
+                            width="500" height="409" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                            allowTransparency="true"></iframe>
                 </div>
                 <div id="GroupBSub2" class="subgroup">
                     <h4>Prayer</h4>
-                    <h5 id="no-bold" class="service-time">Sanctuary Prayer beginning at 7:30pm</h5> <h5 class="service-time">
-                        Every Firday</h5>
-                        <p>Lorem ipsum dolor sit amet, qui te graecis quaerendum. Ea quo luptatum deseruisse, graecis
-                            scaevola vix te. Sea an probo inciderint, no utroque vituperatoribus pro. Qui et albucius
-                            pericula assentior, id sumo maluisset pri. Bonorum vituperatoribus ut sed, qui ut vitae
-                            patrioque. No vis mazim vituperatoribus, ut nostrud corpora cum, usu te ridens epicuri
-                            recteque.
-                            Ne pro agam solum noster, sapientem euripidis reprimique id nec.</p>
+                    <h5 id="no-bold" class="service-time">Sanctuary Prayer beginning at 7:30pm</h5> <h5
+                        class="service-time">
+                    Every Firday</h5>
+                    <p>Lorem ipsum dolor sit amet, qui te graecis quaerendum. Ea quo luptatum deseruisse, graecis
+                        scaevola vix te. Sea an probo inciderint, no utroque vituperatoribus pro. Qui et albucius
+                        pericula assentior, id sumo maluisset pri. Bonorum vituperatoribus ut sed, qui ut vitae
+                        patrioque. No vis mazim vituperatoribus, ut nostrud corpora cum, usu te ridens epicuri
+                        recteque.
+                        Ne pro agam solum noster, sapientem euripidis reprimique id nec.</p>
                 </div>
                 <div id="GroupBSub3" class="subgroup">
                     <h4>Sunday Worship</h4>
@@ -319,46 +367,95 @@ apache 404 pages
                         pericula assentior, id sumo maluisset pri. Bonorum vituperatoribus ut sed, qui ut vitae
                         patrioque. No vis mazim vituperatoribus, ut nostrud corpora cum, usu te ridens epicuri recteque.
                         Ne pro agam solum noster, sapientem euripidis reprimique id nec.</p>
+                    <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ffellowshipmission.churchboston%2Fposts%2F822141717890920%3A0&width=500"
+                            width="500" height="464" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                            allowTransparency="true"></iframe>
                 </div>
             </section>
-            <!--<section id="GroupD" class="group">-->
-                <!--                <h3>Facebook</h3>
-                                <p>Lorem ipsum dolor sit amet, qui te graecis quaerendum. Ea quo luptatum deseruisse, graecis
-                                    scaevola vix te. Sea an probo inciderint, no utroque vituperatoribus pro. Qui et albucius
-                                    pericula assentior, id sumo maluisset pri. Bonorum vituperatoribus ut sed, qui ut vitae
-                                    patrioque. No vis mazim vituperatoribus, ut nostrud corpora cum, usu te ridens epicuri recteque.
-                                    Ne pro agam solum noster, sapientem euripidis reprimique id nec.</p>
-                                <br>-->
-
-                <!--                <div id="GroupCSub1" class="subgroup">
-                                    <h4>Ministers & Deacons</h4>
-                                    <p>Lorem ipsum dolor sit amet, qui te graecis quaerendum. Ea quo luptatum deseruisse, graecis
-                                        scaevola vix te. Sea an probo inciderint, no utroque vituperatoribus pro. Qui et albucius
-                                        pericula assentior, id sumo maluisset pri. Bonorum vituperatoribus ut sed, qui ut vitae
-                                        patrioque. No vis mazim vituperatoribus, ut nostrud corpora cum, usu te ridens epicuri recteque.
-                                        Ne pro agam solum noster, sapientem euripidis reprimique id nec.</p>
-                                </div>
-                                <div id="GroupCSub2" class="subgroup">
-                                    <h4>Sisters</h4>
-                                    <p>Lorem ipsum dolor sit amet, qui te graecis quaerendum. Ea quo luptatum deseruisse, graecis
-                                        scaevola vix te. Sea an probo inciderint, no utroque vituperatoribus pro. Qui et albucius
-                                        pericula assentior, id sumo maluisset pri. Bonorum vituperatoribus ut sed, qui ut vitae
-                                        patrioque. No vis mazim vituperatoribus, ut nostrud corpora cum, usu te ridens epicuri recteque.
-                                        Ne pro agam solum noster, sapientem euripidis reprimique id nec.</p>
-                                </div>
-                                <div id="GroupCSub3" class="subgroup">
-                                    <h4>Brothers</h4>
-                                    <p>Lorem ipsum dolor sit amet, qui te graecis quaerendum. Ea quo luptatum deseruisse, graecis
-                                        scaevola vix te. Sea an probo inciderint, no utroque vituperatoribus pro. Qui et albucius
-                                        pericula assentior, id sumo maluisset pri. Bonorum vituperatoribus ut sed, qui ut vitae
-                                        patrioque. No vis mazim vituperatoribus, ut nostrud corpora cum, usu te ridens epicuri recteque.
-                                        Ne pro agam solum noster, sapientem euripidis reprimique id nec.</p>
-                                </div>-->
-        <!--    </section>
-            <section id="GroupE" class="group">
-                &lt;!&ndash;<h4>Location</h4>&ndash;&gt;
+            <section id="GroupD" class="group">
+                <h3>Prayer</h3>
+                <p>Lorem ipsum dolor sit amet, qui te graecis quaerendum. Ea quo luptatum deseruisse, graecis
+                    scaevola vix te. Sea an probo inciderint, no utroque vituperatoribus pro. Qui et albucius
+                    pericula assentior, id sumo maluisset pri. Bonorum vituperatoribus ut sed, qui ut vitae
+                    patrioque. No vis mazim vituperatoribus, ut nostrud corpora cum, usu te ridens epicuri recteque.
+                    Ne pro agam solum noster, sapientem euripidis reprimique id nec.</p>
+                <div id="GroupDSub1" class="subgroup">
+                    <h4>Prayer Team</h4>
+                    <p>Lorem ipsum dolor sit amet, qui te graecis quaerendum. Ea quo luptatum deseruisse, graecis
+                        scaevola vix te. Sea an probo inciderint, no utroque vituperatoribus pro. Qui et albucius
+                        pericula assentior, id sumo maluisset pri. Bonorum vituperatoribus ut sed, qui ut vitae
+                        patrioque. No vis mazim vituperatoribus, ut nostrud corpora cum, usu te ridens epicuri recteque.
+                        Ne pro agam solum noster, sapientem euripidis reprimique id nec.</p>
+                </div>
+                <div id="GroupDSub2" class="subgroup">
+                    <!--                   <h4>Prayer Cards</h4>
+                                       <p>Lorem ipsum dolor sit amet, qui te graecis quaerendum. Ea quo luptatum deseruisse, graecis
+                                           scaevola vix te. Sea an probo inciderint, no utroque vituperatoribus pro. Qui et albucius
+                                           pericula assentior, id sumo maluisset pri./p>-->
+                    <form id="contactForm" method="post"
+                          action="http://cscie12.dce.harvard.edu/echo">
+                        <fieldset>
+                            <legend>Prayer Cards</legend>
+                            <p>Lorem ipsum dolor sit amet, qui te graecis quaerendum. Ea quo luptatum deseruisse,
+                                graecis
+                                scaevola vix te. Sea an probo inciderint, no utroque vituperatoribus pro. Qui et
+                                albucius
+                                pericula assentior, id sumo maluisset pri.</p>
+                            <p>
+                                <label for="name">Name</label>
+                                <br/>
+                                <input id="name" name="name" size="25"/>
+                            </p>
+                            <p>
+                                <label for="email">Email Address</label>
+                                <br/>
+                                <input id="email" name="email" size="25"/>
+                            </p>
+                            <p>
+                                <label for="comments">Prayer Requests</label> <em>(Required)</em>
+                                <br/>
+                                <textarea id="comments" name="comments" class="required" required></textarea>
+                            </p>
+                            <p>
+                                <input class="submit" type="submit" value="Submit Form"/></p>
+                        </fieldset>
+                    </form>
+                </div>
+                <div id="GroupDSub3" class="subgroup">
+                    <h4>Sanctuary Prayer</h4>
+                    <p>Lorem ipsum dolor sit amet, qui te graecis quaerendum. Ea quo luptatum deseruisse, graecis
+                        scaevola vix te. Sea an probo inciderint, no utroque vituperatoribus pro. Qui et albucius
+                        pericula assentior, id sumo maluisset pri. Bonorum vituperatoribus ut sed, qui ut vitae
+                        patrioque. No vis mazim vituperatoribus, ut nostrud corpora cum, usu te ridens epicuri recteque.
+                        Ne pro agam solum noster, sapientem euripidis reprimique id nec.</p>
+                </div>
+                <div id="GroupDSub4" class="subgroup">
+                    <h4>Summer Outreach</h4>
+                    <p>Lorem ipsum dolor sit amet, qui te graecis quaerendum. Ea quo luptatum deseruisse, graecis
+                        scaevola vix te. Sea an probo inciderint, no utroque vituperatoribus pro. Qui et albucius
+                        pericula assentior, id sumo maluisset pri. Bonorum vituperatoribus ut sed, qui ut vitae
+                        patrioque. No vis mazim vituperatoribus, ut nostrud corpora cum, usu te ridens epicuri recteque.
+                        Ne pro agam solum noster, sapientem euripidis reprimique id nec.</p>
+                </div>
             </section>
--->
+            <section id="GroupE" class="group">
+                <h3>Location</h3>
+                <p>Lorem ipsum dolor sit amet, qui te graecis quaerendum. Ea quo luptatum deseruisse, graecis
+                    scaevola vix te. Sea an probo inciderint, no utroque vituperatoribus pro. Qui et albucius
+                    pericula assentior, id sumo maluisset pri.</p>
+                <div id="GroupESub1" class="subgroup">
+                    <h4>Directions</h4>
+                    <p>Lorem ipsum dolor sit amet, qui te graecis quaerendum. Ea quo luptatum deseruisse, graecis
+                        scaevola vix te. Sea an probo inciderint, no utroque vituperatoribus pro. Qui et albucius
+                        pericula assentior, id sumo maluisset pri. Bonorum vituperatoribus ut sed, qui ut vitae
+                        patrioque. No vis mazim vituperatoribus, ut nostrud corpora cum, usu te ridens epicuri recteque.
+                        Ne pro agam solum noster, sapientem euripidis reprimique id nec.</p>
+                    <br>
+                    <iframe width="600" height="450" style="border:0"
+                            src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJrbLYRSh644kRN6gvBiijsi4&key=AIzaSyB219TP67--c_r6rGwnyl8Hs61Od_xTWTo"
+                            allowfullscreen></iframe>
+                </div>
+            </section>
         </div>
 
     </div>
@@ -374,9 +471,11 @@ apache 404 pages
                             <li><a href="#GroupASub2">Pastor</a></li>
                             <li><a href="#GroupASub3">History</a></li>
                             <li><a href="#GroupASub4">Facebook</a></li>
-                            <li><a href="#GroupASub5">Location</a></li>
-                            <li><a href="#GroupASub6">Video</a></li>
-                            <li><a href="#GroupASub7">Audio</a></li>
+                            <li><a href="#GroupASub5">Video</a></li>
+                            <li><a href="#GroupASub6">Audio</a></li>
+                            <li><a href="#GroupASub7">Children's Church</a></li>
+                            <li><a href="#GroupASub8">Sunday School</a></li>
+                            <li><a href="#GroupASub9">Community Outreach</a></li>
                         </ul>
                     </li>
                     <li>
@@ -395,68 +494,38 @@ apache 404 pages
                             <li><a href="#GroupCSub3">Brothers</a></li>
                         </ul>
                     </li>
+                    <li>
+                        <a href="#GroupD">Prayer</a>
+                        <ul class="nav nav-stacked">
+                            <li><a href="#GroupDSub1">Prayer Team</a></li>
+                            <li><a href="#GroupDSub2">Prayer Cards</a></li>
+                            <li><a href="#GroupDSub3">Sanctuary Prayer</a></li>
+                            <li><a href="#GroupDSub4">Summer Outreach</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#GroupE">Location</a>
+                        <ul class="nav nav-stacked">
+                            <li><a href="#GroupESub1">Directions</a></li>
+                            <!--                            <li><a href="#GroupESub2">Prayer Cards</a></li>
+                                                        <li><a href="#GroupESub3">Sanctuary Prayer</a></li>
+                                                        <li><a href="#GroupESub4">Summer Outreach</a></li>-->
+                        </ul>
+                    </li>
+<!--                    <li>
+                        <a href="#GroupF">Children's Church</a>
+                        <ul class="nav nav-stacked">
+                            <li><a href="#GroupDSub1">Prayer Team</a></li>
+                            <li><a href="#GroupDSub2">Prayer Cards</a></li>
+                            <li><a href="#GroupDSub3">Sanctuary Prayer</a></li>
+                            <li><a href="#GroupDSub4">Summer Outreach</a></li>
+                        </ul>
+                    </li>-->
                 </ul>
             </nav>
-            <!--Main Content -->
-            <!-- <div class="col-xs-9">
-                 <section id="GroupA" class="group">
-                     <h3>Group A</h3>
-                     <div id="GroupASub1" class="subgroup">
-                         <h4>Group A Sub 1</h4>
-                     </div>
-                     <div id="GroupASub2" class="subgroup">
-                         <h4>Group A Sub 2</h4>
-                     </div>
-                 </section>
-                 <section id="GroupB" class="group">
-                     <h3>Group B</h3>
-                     <div id="GroupBSub1" class="subgroup">
-                         <h4>Group B Sub 1</h4>
-                     </div>
-                     <div id="GroupBSub2" class="subgroup">
-                         <h4>Group B Sub 2</h4>
-                     </div>
-                 </section>
-                 <section id="GroupC" class="group">
-                     <h3>Group C</h3>
-                     <div id="GroupCSub1" class="subgroup">
-                         <h4>Group C Sub 1</h4>
-                     </div>
-                     <div id="GroupCSub2" class="subgroup">
-                         <h4>Group C Sub 2</h4>
-                     </div>
-                 </section>
-             </div>-->
         </div>
 
     </div>
-    <!--
-        <div class="col-md-3" role="complementary">
-            <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix-top">
-                <ul class="nav bs-docs-sidenav">
-                    <li class=""><a href="#overview">Overview</a>
-                        <ul class="nav">
-                            <li class=""><a href="#overview-doctype">HTML5 doctype</a></li>
-                            <li class=""><a href="#overview-mobile">Mobile first</a></li>
-                            <li><a href="#overview-type-links">Typography and links</a></li>
-                            <li><a href="#overview-normalize">Normalize.css</a></li>
-                            <li class=""><a href="#overview-container">Containers</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#grid">Grid system</a>
-                        <ul class="nav">
-                            <li><a href="#grid-intro">Introduction</a></li>
-                            <li><a href="#grid-media-queries">Media queries</a></li>
-                            <li><a href="#grid-options">Grid options</a></li>
-                            <li><a href="#grid-less">Less mixins and variables</a></li>
-                        </ul>
-                    </li>
-                </ul>
-                <a class="back-to-top" href="#top"> Back to top </a> <a href="#" class="bs-docs-theme-toggle" role="button">
-                Preview theme </a></nav>
-        </div>
-    -->
-
 
     <div class="row marketing">
         <div class="col-lg-6">
@@ -485,7 +554,9 @@ apache 404 pages
     </div>
 
     <footer class="footer">
-        <p>&copy; 2015 Company, Inc.</p>
+        <p>&copy; 2015 Fellowship MissionChurch</p>
+        <p>85 Centre Street</p>
+        <p>Boston, MA 02119</p>
     </footer>
 
 </div> <!-- /container -->
