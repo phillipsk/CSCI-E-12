@@ -1,6 +1,7 @@
 
 <footer>
-
+<!--No footer desired on home page, file here for personal reminder-->
+    
 </footer>
 
 
