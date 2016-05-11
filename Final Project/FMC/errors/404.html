@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My website: 404 error</title>
+    <link href="../css/fmc.css" type="text/css" rel="stylesheet">
+</head>
+<body id="apache">
+<h1>Oops! File Not Found</h1>
+<p>Not what you were looking for!?<br/>
+<a class="apache" href="/">head back home</a></p>
+<!-- Apache Web Server .htaccess contents
+
+ErrorDocument 404 /~kphillip/Week%2011/errors/404.html
+
+#Expiration Headers for all linked files
+ExpiresActive On
+        #7 Days
+        #HTML
+        ExpiresByType text/html A604800
+        #CSS
+        ExpiresByType text/css  A604800
+        #JS
+        ExpiresByType application/javascript    A604800
+        #images
+        ExpiresByType images/jpeg A604800
+        ExpiresByType images/gif A604800
+        ExpiresByType images/png A604800
+
+
+#Output Filters for Compression
+        #HTML
+        AddOutputFilterByType DEFLATE text/html
+
+        #CSS
+        AddOutputFilterByType DEFLATE text/css
+
+        #JS
+        AddOutputFilterByType DEFLATE text/javascript
+        AddOutputFilterByType DEFLATE application/javascript
+
+#Redirects
+        Redirect 301 /~kphillip/myfavoritebook http://amzn.com/0615284035
+        Redirect 301 /~kphillip/myfavoritecolor http://www.pantone.com/
+
+	-->
+</body>
+</html>

@@ -169,6 +169,7 @@ http://stackoverflow.com/questions/13391566/twitter-bootstrap-carousel-different
     padding: 1.3em;
 }
 
+/*Worship services*/
 h5 {
     font-weight: 600;
     display: inline;
@@ -185,4 +186,21 @@ h5 {
 
 .service-time {
     /*padding-top: 1em;*/
+}
+/*Sidebar manual pics*/
+.sidebar_pics{
+    width: 560px;
+    height:400px;
+    overflow: hidden;
+    padding: 1em;
+}
+/*Apache errors*/
+body #apache{
+    background-image: url("../img/image-404.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+a .apache{
+    color: lightblue;
 }
