@@ -36,6 +36,11 @@ window.onload = function () {
 
     }
 
+    $('#search-btn').click(function() {
+        var value = $('#search-txt').val();
+        getData(value);
+    });
+
     /* What's going on here??????????
     * TODO:
     * form validation with custom search box for specific passages*/
@@ -56,6 +61,7 @@ window.onload = function () {
             win.document.close();
 
             window.setTimeout( function() {
+                // Book objects have chapters in each key
                 if (x.book) {
                     var chapters = Object.keys(x.book);
 
@@ -69,9 +75,9 @@ window.onload = function () {
                                 var verse = chapter.chapter[verse_nr];
 
                                 var div = document.createElement('div');
-                                div.innerHTML = chapter_nr + ":" + verse_nr + " " + verse.verse;
+                                div.innerHTML = chapter.chapter_nr + ":" + verse.verse_nr + " " + verse.verse;
                                 div.className = 'book book_' + book;
-                                div.id="verse_" + book + "-" + chapter_nr + "-" + verse_nr;
+                                div.id="verse_" + book + "-" + chapter.chapter_nr + "-" + verse.verse_nr;
 
                                 win.document.body.appendChild(div);
 
@@ -79,6 +85,25 @@ window.onload = function () {
                             });
                         }
                     });
+                }
+
+                // Chapter objects have verses in each key
+                if (x.chapter) {
+                    var verses = Object.keys(x.chapter);
+
+                    verses.forEach(function(verse_nr) {
+                        var verse = x.chapter[verse_nr];
+
+                        var div = document.createElement('div');
+                        div.innerHTML = x.chapter_nr + ":" + verse_nr + " " + verse.verse;
+                        div.className = 'book book_' + x.book_name;
+                        div.id="verse_" + book + "-" + x.chapter_nr + "-" + verse_nr;
+
+                        win.document.body.appendChild(div);
+
+                        //txt += "<div class='book book_" + book + "' id='verse_" + book + "-" + chapter_nr + "-" + verse_nr + "'>" + chapter_nr + ":" + verse_nr + " " + verse.verse + "</div>";
+                    });
+
                 }
 
                 //win.document.close();

@@ -31,5 +31,12 @@ body {
 /*search box*/
 .input-group {
     /*align right*/
-    float: right;
+    float: left;
+    width: 30%;
+    margin-top: 25px;
+}
+
+.heading1 {
+    float: left;
+    width: 10%;
 }
