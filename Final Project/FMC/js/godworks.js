@@ -38,7 +38,38 @@ window.onload = function () {
 
     $('#search-btn').click(function() {
         var value = $('#search-txt').val();
-        getData(value);
+        var found = false;
+
+        FullBooks.forEach(function(book) {
+            if (value.match(book, 'i')) {
+                found = true;
+                return false;
+            }
+        });
+
+        if (found) {
+            getData(value);
+        } else {
+            alert("This book doesn't exist!");
+        }
+    });
+
+    $('#search-txt').keyup(function() {
+        var value = $('#search-txt').val();
+
+        if (value.length == 0) {
+            return;
+        }
+
+        var firstUpper = value[0].toUpperCase();
+
+        if (value.length > 1) {
+            for (var i = 1; i < value.length; i++) {
+                firstUpper += value[i];
+            }
+        }
+
+        $('#search-txt').val(firstUpper);
     });
 
     /* What's going on here??????????
