@@ -20,7 +20,7 @@
     <!--jQuery but note this jQuery version doesn't support data-slide HTML method apparently-->
     <script type="text/javascript" src="js/jquery-1.12.2.min.js"></script>
 
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>

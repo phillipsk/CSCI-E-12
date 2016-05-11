@@ -1,9 +1,13 @@
+
+
 window.onload = function () {
     var bibleListOld = document.getElementById('bible-list-old');
     var bibleListNew = document.getElementById('bible-list-new');
 
     var OldTestamentBooksLen = OldTestBooks.length;
     var NewTestamentBooksLen = NewTestBooks.length;
+
+    /*Please note I receive help from a mentor on interpreting the API documentation from https://getbible.net/api and through portions of my code within the JS file*/
 
     for (var i = 0; i < OldTestamentBooksLen; i++) {
         var book = OldTestBooks[i];
@@ -72,9 +76,6 @@ window.onload = function () {
         $('#search-txt').val(firstUpper);
     });
 
-    /* What's going on here??????????
-    * TODO:
-    * form validation with custom search box for specific passages*/
     function getData(book) {
         $.ajax({
             url:'http://getbible.net/json',
@@ -112,6 +113,7 @@ window.onload = function () {
 
                                 win.document.body.appendChild(div);
 
+                                /* Another way to dump the link and script functions unto the page as in lines 82-83*/
                                 //txt += "<div class='book book_" + book + "' id='verse_" + book + "-" + chapter_nr + "-" + verse_nr + "'>" + chapter_nr + ":" + verse_nr + " " + verse.verse + "</div>";
                             });
                         }
@@ -130,14 +132,14 @@ window.onload = function () {
                         div.className = 'book book_' + x.book_name;
                         div.id="verse_" + book + "-" + x.chapter_nr + "-" + verse_nr;
 
-                        win.document.body.appendChild(div);
+                        win.document.body.appendChild(div)
 
+                        /* Another way to dump the link and script functions unto the page as in lines 82-83*/
                         //txt += "<div class='book book_" + book + "' id='verse_" + book + "-" + chapter_nr + "-" + verse_nr + "'>" + chapter_nr + ":" + verse_nr + " " + verse.verse + "</div>";
                     });
 
                 }
 
-                //win.document.close();
 
                 var books = win.window.$('.book');
                 var current = -1;
