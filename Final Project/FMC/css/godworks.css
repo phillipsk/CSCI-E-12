@@ -11,11 +11,12 @@
     margin: auto;*!
 }*/
 
-h1{
+h1 {
     color: #d43f3a;
     font-family: calibri, helvetica, sans-serif;
 }
-body{
+
+body {
     margin: auto;
 }
 
@@ -25,4 +26,10 @@ body{
     margin-right: auto;
     margin-left: auto;
 
+}
+
+/*search box*/
+.input-group {
+    /*align right*/
+    float: right;
 }
