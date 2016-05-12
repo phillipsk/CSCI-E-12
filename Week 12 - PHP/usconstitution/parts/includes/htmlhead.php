@@ -12,15 +12,4 @@
         console.log("mynavid is " + mynavid);
         $(mynavid).attr('id','iamhere');
     });
-/*    $(document).ready(function(){
-        var mybodyid = $('body').attr('id');
-        var mynavid = '#nav' + mybodyid;
-        /!* e.g. for 3.shtml:
-         mybodyid is 'part3'
-         mynavid  is '#navpart3'
-         *!/
-        console.log("mybodyid is " + mybodyid);
-        console.log("mynavid is " + mynavid);
-        $(mynavid).attr('id','iamhere');
-    });*/
 </script>
