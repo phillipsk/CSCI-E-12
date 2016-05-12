@@ -2,7 +2,11 @@
 <html lang="en">
 <head>
     <?php include("includes/htmlhead.php"); ?>
-    
+    <!--    Please note I received help from my mentor Errietta Kostala on interpreting the API
+            documentation from  https://getbible.net/api and throughout portions of my code, for full
+            details please review the commits on my git repository
+            https://github.com/phillipsk/CSCI-E-12/tree/master/Final%20Project/FMC-->
+
 </head>
 
 <body>

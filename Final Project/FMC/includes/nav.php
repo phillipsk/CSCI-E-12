@@ -1,6 +1,11 @@
 <!--<div class="page-header">
     <h1>Welcome to Fellowship Mission Church<small>Subtext for header</small></h1>
 </div>-->
+<!--    Please note I received help from my mentor Errietta Kostala on interpreting the API
+        documentation from  https://getbible.net/api and throughout portions of my code, for full
+        details please review the commits on my git repository
+        https://github.com/phillipsk/CSCI-E-12/tree/master/Final%20Project/FMC-->
+
 <nav class="navbar navbar-default">
     <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->

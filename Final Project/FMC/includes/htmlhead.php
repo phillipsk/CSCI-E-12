@@ -9,6 +9,10 @@
     <!--<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <!--<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>-->
+<!--    Please note I received help from my mentor Errietta Kostala on interpreting the API
+        documentation from  https://getbible.net/api and throughout portions of my code, for full
+        details please review the commits on my git repository
+        https://github.com/phillipsk/CSCI-E-12/tree/master/Final%20Project/FMC-->
 
     <link rel="icon" href="img/cross_favicon.ico">
 

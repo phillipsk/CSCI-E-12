@@ -1,10 +1,12 @@
+/*Please note I received help from my mentor Errietta Kostala on interpreting the API
+documentation from  https://getbible.net/api and throughout portions of my code within
+the JS file, for full details please review the commits on my git repository
+ https://github.com/phillipsk/CSCI-E-12/tree/master/Final%20Project/FMC*/
+
 body {
     position: relative;
 }
 
-/*#index{
-    background-image: url("../img/fmc_all.jpg");
-}*/
 #parallax-first {
     background: url('../img/fmc_all.jpg') 50% 0 / cover no-repeat fixed;
 
@@ -143,6 +145,7 @@ http://stackoverflow.com/questions/13391566/twitter-bootstrap-carousel-different
 .bs-docs-sidebar .nav > .active > ul.nav {
     display: block;
 }
+
 
 @media (min-width: 400px) {
     .fb-page {

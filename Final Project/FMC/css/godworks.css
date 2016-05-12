@@ -1,4 +1,8 @@
 /*God.Works*/
+/*Please note I received help from my mentor Errietta Kostala on interpreting the API
+documentation from  https://getbible.net/api and throughout portions of my code within
+the CSS file, for full details please review the commits on my git repository
+ https://github.com/phillipsk/CSCI-E-12/tree/master/Final%20Project/FMC*/
 .book:hover, .book.active {
     background-color: yellow;
 }
